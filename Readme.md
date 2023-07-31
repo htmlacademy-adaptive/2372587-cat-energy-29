@@ -25,7 +25,6 @@ _`.github`, `.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `pa
 #### 2. Создайте форк
 
 [Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/2372587-cat-energy-29) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
-
 <img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808133-3a7ace00-a190-11e9-9d29-401b02036a9c.jpg">
 
 Получится вот так:
