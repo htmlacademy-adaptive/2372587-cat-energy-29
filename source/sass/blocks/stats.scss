@@ -1,0 +1,44 @@
+.stats {
+  background: rgba(104, 183, 56, 0.85);
+}
+
+.stats__main-title {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0;
+  padding-top: 27px;
+}
+
+.stats__title {
+  color: #ffffff;
+  font-family: "Oswald";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-top: 25px;
+}
+
+.stats__product-presentation {
+  padding-top: 29px;
+  display: block;
+  margin: 0 auto;
+}
+
+.stats__choose-program {
+  color: #ffffff;
+  background-color: #68B738;
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+}

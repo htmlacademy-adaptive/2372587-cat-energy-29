@@ -3,63 +3,85 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <title>CAT ENERGY</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="main-header">
-  <a class="main-header__logo" href="index.html">
-    <svg class="main-header__cat-logo" src="http://www.w3.org/2000/svg" width="33" height="38" fill="none">
-      <g clip-path="url(#a)">
-        <path fill="#FDC305"
-              d="M6 21v-2.3c6.6-1 13.3-1.4 20-1.4v1.8a25 25 0 0 1 5.9-1.8A16.8 16.8 0 0 0 25 9a16.2 16.2 0 0 0-20 2.1 17 17 0 0 0-5 9.5l6 .3ZM27 24.5c-1.2 1.3-1.4 1.2-1.4 3.5v9.2a16.7 16.7 0 0 0 7-17c-2 1.1-3.9 2.6-5.6 4.3ZM6.3 26 1.2 24 0 24A17 17 0 0 0 8.6 38L6.3 26Z"/>
-        <path fill="#F06351"
-              d="M26 17.3c0-5.6-.4-11.2-1.3-16.6 0 0-.2-1.3-1-.3-.5 1.3-1 2.6-1.1 4-4.2-.3-8.5-.2-12.7.3C9.2 2 7.8.7 7.1 1c-.7.3-.7 3.4-.7 3.4l-.3 14.2a139 139 0 0 1 20-1.3Z"/>
-        <path fill="#000"
-              d="m12.3 14.1 1.4 1c.4.2.6.4.6.6 0 .1-.3.3-.6.3-.4 0-1-.1-1-.3h1.2c-.6-.4-1.1-1-1.6-1.6ZM19.7 14.3l-1 1.3s-.2.4.1.3l1.2-.3-.1-.2-1 .1.8-1.2s.1-.2 0 0ZM16.6 20.4c.4-.2.8-.6 1-1 .3-.7 0-1-.4-1-.6-.1-1.2 0-1.7.3-.4.4-.3.8 0 1l1 .7Z"/>
-        <path fill="#F06351"
-              d="M16.2 21.7a2 2 0 0 1-.5.6c-.2.2-.6.3-1 .4-.5 0-1-.1-1.4-.5-.2 0-.4-.2-.5-.4a1 1 0 0 0-.4-.3s.8 4.2 2.6 4.8c1.8.7 2-.7 2.1-1.1 0-1.2-.2-2.3-.8-3.3 0-.3 0-.1-.1-.2Z"/>
-        <path fill="#000"
-              d="M14.6 22.8a3.4 3.4 0 0 1-2.4-1.5.1.1 0 0 1 .1-.1.1.1 0 0 1 .2 0c.5.7 1.2 1.2 2 1.3a2 2 0 0 0 1.7-1l.1-.2.1.2s.4.8 1 .8 1-.4 1.6-1.3a.1.1 0 0 1 .2 0v.2c-.6 1-1.2 1.5-1.8 1.4a1.5 1.5 0 0 1-1.1-.7 2.3 2.3 0 0 1-1.7 1Z"/>
-        <path fill="#F06351"
-              d="M26 19.1a58.7 58.7 0 0 0-5 5.3 31.6 31.6 0 0 1-5.3 4.9c-.2-.5-1.6-1.5-1.6-1.5L9 23.9l-3.1-3-2-.1c2.9 4.2 7 7.4 11.9 8.9a21 21 0 0 0 5-3.3c2.1-1.9 4-3.9 5.9-6 .5-.6.9-1.3 1.1-2l-1.8.7Z"/>
-      </g>
-      <defs>
-        <clipPath id="a">
-          <path fill="#fff" d="M0 0h33v38H0z"/>
-        </clipPath>
-      </defs>
-    </svg>
-    <img class="main-header__logo-image" src="images/header-logo.svg" width="101" height="18"
-         alt="CAT ENERGY">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item site-list__item--active">
-          <a href="#">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div class="main-header__wrapper main-header__wrapper-position">
+    <a class="main-header__logo" href="index.html">
+      <svg class="main-header__cat-logo" src="http://www.w3.org/2000/svg" width="33" height="38" fill="none">
+        <g clip-path="url(#a)">
+          <path fill="#FDC305"
+                d="M6 21v-2.3c6.6-1 13.3-1.4 20-1.4v1.8a25 25 0 0 1 5.9-1.8A16.8 16.8 0 0 0 25 9a16.2 16.2 0 0 0-20 2.1 17 17 0 0 0-5 9.5l6 .3ZM27 24.5c-1.2 1.3-1.4 1.2-1.4 3.5v9.2a16.7 16.7 0 0 0 7-17c-2 1.1-3.9 2.6-5.6 4.3ZM6.3 26 1.2 24 0 24A17 17 0 0 0 8.6 38L6.3 26Z"/>
+          <path fill="#F06351"
+                d="M26 17.3c0-5.6-.4-11.2-1.3-16.6 0 0-.2-1.3-1-.3-.5 1.3-1 2.6-1.1 4-4.2-.3-8.5-.2-12.7.3C9.2 2 7.8.7 7.1 1c-.7.3-.7 3.4-.7 3.4l-.3 14.2a139 139 0 0 1 20-1.3Z"/>
+          <path fill="#000"
+                d="m12.3 14.1 1.4 1c.4.2.6.4.6.6 0 .1-.3.3-.6.3-.4 0-1-.1-1-.3h1.2c-.6-.4-1.1-1-1.6-1.6ZM19.7 14.3l-1 1.3s-.2.4.1.3l1.2-.3-.1-.2-1 .1.8-1.2s.1-.2 0 0ZM16.6 20.4c.4-.2.8-.6 1-1 .3-.7 0-1-.4-1-.6-.1-1.2 0-1.7.3-.4.4-.3.8 0 1l1 .7Z"/>
+          <path fill="#F06351"
+                d="M16.2 21.7a2 2 0 0 1-.5.6c-.2.2-.6.3-1 .4-.5 0-1-.1-1.4-.5-.2 0-.4-.2-.5-.4a1 1 0 0 0-.4-.3s.8 4.2 2.6 4.8c1.8.7 2-.7 2.1-1.1 0-1.2-.2-2.3-.8-3.3 0-.3 0-.1-.1-.2Z"/>
+          <path fill="#000"
+                d="M14.6 22.8a3.4 3.4 0 0 1-2.4-1.5.1.1 0 0 1 .1-.1.1.1 0 0 1 .2 0c.5.7 1.2 1.2 2 1.3a2 2 0 0 0 1.7-1l.1-.2.1.2s.4.8 1 .8 1-.4 1.6-1.3a.1.1 0 0 1 .2 0v.2c-.6 1-1.2 1.5-1.8 1.4a1.5 1.5 0 0 1-1.1-.7 2.3 2.3 0 0 1-1.7 1Z"/>
+          <path fill="#F06351"
+                d="M26 19.1a58.7 58.7 0 0 0-5 5.3 31.6 31.6 0 0 1-5.3 4.9c-.2-.5-1.6-1.5-1.6-1.5L9 23.9l-3.1-3-2-.1c2.9 4.2 7 7.4 11.9 8.9a21 21 0 0 0 5-3.3c2.1-1.9 4-3.9 5.9-6 .5-.6.9-1.3 1.1-2l-1.8.7Z"/>
+        </g>
+        <defs>
+          <clipPath id="a">
+            <path fill="#fff" d="M0 0h33v38H0z"/>
+          </clipPath>
+        </defs>
+      </svg>
+      <img class="main-header__logo-image" src="images/header-logo.svg" width="101" height="18"
+           alt="CAT ENERGY">
+    </a>
+    <nav class="main-nav">
+      <button onclick="myFunction()" class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <img class="main-nav__toggle-picture" src="images/burger_mobile.svg" width="24" height="16">
+      </button>
+      <div id="myDropdown" class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      window.onclick = function (event) {
+        if (!event.target.matches('.main-nav__toggle')) {
+
+          var dropdowns = document.getElementsByClassName("main-nav__wrapper");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+  </div>
 </header>
 <main class="main-container">
   <section class="catalog">
     <h1 class="catalog__title">Каталог продукции</h1>
-    <h2 class="visually-hidden">Каталог товаров</h2>
     <ul class="catalog__list">
       <li class="catalog__item product">
         <a class="product__page" href="#">
@@ -195,7 +217,7 @@
         <h3 class="all-catalog__title">Показать еще 100500 товаров</h3>
         <p class="all-catalog__description">На самом деле вкусов гораздо больше!</p>
         <a class="all-catalog__page" href="#">
-          <button class="all-catalog__choose" type="button">показать все</button>
+          <button class="all-catalog__choose product__choose" type="button">показать все</button>
         </a>
       </li>
     </ul>
@@ -208,37 +230,41 @@
           <h3 class="additional__title-product">Сахарозаменитель</h3>
           <span class="additional__description">1 упаковка (100 г)</span>
           <b class="additional__description-price">200 ₽</b>
-          <button class="additional__choose" type="button">заказать</button>
+          <button class="additional__choose product__choose" type="button">заказать</button>
         </li>
         <li class="additional__item">
           <h3 class="additional__title-product">Питьевая вода</h3>
           <span class="additional__description">5 литров</span>
           <b class="additional__description-price">50 ₽</b>
-          <button class="additional__choose" type="button">заказать</button>
+          <button class="additional__choose product__choose" type="button">заказать</button>
         </li>
         <li class="additional__item">
           <h3 class="additional__title-product">молоко</h3>
           <span class="additional__description">1 литр</span>
           <b class="additional__description-price">100 ₽</b>
-          <button class="additional__choose" type="button">заказать</button>
+          <button class="additional__choose product__choose" type="button">заказать</button>
         </li>
         <li class="additional__item">
           <h3 class="additional__title-product">витамины</h3>
           <span class="additional__description">1 упаковка (30 г)</span>
           <b class="additional__description-price">300 ₽</b>
-          <button class="additional__choose" type="button">заказать</button>
+          <button class="additional__choose product__choose" type="button">заказать</button>
         </li>
       </ul>
     </div>
   </section>
   <section class="information">
+    <div class="information__wrapper">
     <h2 class="visually-hidden">Информация покупателям</h2>
     <!--Вставить подарочек -->
     <p class="information__description present">Закажите все и получите чехол для кота в подарок!</p>
+    </div>
   </section>
-  <section class="company-address">
+  <section class="company-address company-address__catalog">
+    <div class="company-address__wrapper">
     <h2 class="company-address__title">Приглашаем к сотрудничеству дилеров!</h2>
     <p class="company-address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </div>
     <!--- Здесь будет интерактивная карта -->
   </section>
 </main>
