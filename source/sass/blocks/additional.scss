@@ -16,6 +16,17 @@
   line-height: 24px;
   margin: 0px;
   padding-bottom: 36px;
+  position: relative;
+}
+
+.additional__title::after {
+  content: "";
+  height: 1px;
+  width: 280px;
+  position: absolute;
+  background-color: #cdcdcd;
+  top: 60px;
+  left: 0px;
 }
 
 .additional__list {
@@ -26,6 +37,8 @@
 
 .additional__item {
   padding-top: 13px;
+  padding-bottom: 19px;
+  position: relative;
 }
 
 .additional__title-product {
@@ -38,6 +51,11 @@
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 13px;
+}
+
+.additional__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .additional__description {
@@ -62,4 +80,15 @@
 
 .additional__choose {
   margin-top: 15px;
+  position: relative;
+}
+
+.additional__choose::after {
+  content: "";
+  height: 1px;
+  width: 280px;
+  position: absolute;
+  background-color: #cdcdcd;
+  top: 60px;
+  left: 0px;
 }

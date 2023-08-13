@@ -13,6 +13,7 @@
   background-color: #F2F2F2;
   padding: 20px;
   margin-top: 20px;
+  position: relative;
 }
 
 .advantages__title {
@@ -24,6 +25,31 @@
   text-transform: uppercase;
   margin: 0;
   padding-top: 30px;
+  padding-left: 90px;
+}
+
+.advantages__title--slim::before {
+  content: '';
+  position: absolute;
+  background-image: url("../../images/cat-sitting.png");
+  background-repeat: no-repeat;
+  height: 53px;
+  width: 50px;
+  padding-right: 20px;
+  left: 20px;
+  top: 40px;
+}
+
+.advantages__title--pro::before {
+  content: '';
+  position: absolute;
+  background-image: url("../../images/cat-go.png");
+  background-repeat: no-repeat;
+  height: 53px;
+  width: 50px;
+  padding-right: 20px;
+  left: 20px;
+  top: 40px;
 }
 
 .advantages__description {
@@ -35,7 +61,17 @@
   max-width: 227px;
   margin: 0;
   padding-top: 29px;
-  padding-left: 20px;
+  position: relative;
+}
+
+.advantages__description::after {
+  content: "";
+  height: 1px;
+  width: 240px;
+  position: absolute;
+  background-color: #d9d9d9;
+  left: 0px;
+  top: 140px;
 }
 
 .advantages__catalog {

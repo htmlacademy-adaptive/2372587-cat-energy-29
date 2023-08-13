@@ -25,6 +25,8 @@
 }
 
 .example__list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   list-style-type: none;
   padding: 20px 0 0 0;

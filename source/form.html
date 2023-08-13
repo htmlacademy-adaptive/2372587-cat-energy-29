@@ -34,11 +34,10 @@
            alt="CAT ENERGY">
     </a>
     <nav class="main-nav">
-      <button onclick="myFunction()" class="main-nav__toggle" type="button">
+      <button id='burger' class="main-nav__toggle menu-close" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <img class="main-nav__toggle-picture" src="images/burger_mobile.svg" width="24" height="16">
       </button>
-      <div id="myDropdown" class="main-nav__wrapper">
+      <div id='menu' class="main-nav__wrapper wrapper-open">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a href="index.html">
@@ -58,25 +57,7 @@
         </ul>
       </div>
     </nav>
-    <script>
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      window.onclick = function (event) {
-        if (!event.target.matches('.main-nav__toggle')) {
-
-          var dropdowns = document.getElementsByClassName("main-nav__wrapper");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-    </script>
+    <script src="js/script.js"></script>
   </div>
 </header>
 <main class="main-container">
@@ -170,7 +151,10 @@
     <div class="company-address__wrapper">
     <h2 class="company-address__title">Приглашаем к сотрудничеству дилеров!</h2>
     <p class="company-address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-    <!--- Здесь будет интерактивная карта -->
+    </div>
+    <div class="company-address__maps">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e13661316e90b1716b245ff04f35bf65a6afae241b2916416bb271dade71678&amp;source=constructor" width="320" height="362" frameborder="0"></iframe>
+    </div>
   </section>
 </main>
 <footer class="main-footer">
@@ -183,13 +167,32 @@
       <h2 class="visually-hidden">Наши соцсети</h2>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="none">
+              <path fill="#666"
+                    d="M1 5.3C1 4.5 1.5 4 2.5 4h4c.3 0 .5.1.5.4l1.4 3.2a39.8 39.8 0 0 0 2.4 3.4s.2 0 .2-.2l.1-.3V6.2c0-.3 0-.5-.2-.6l-.8-.2c-.3 0-.5-.3-.5-.6v-.1C10 3.6 11.1 3 12.8 3h1.5c.7 0 1.3.2 1.7.5.4.3.7.8.7 1.5v5.7l.3.1c.3 0 .5-.1.7-.4A17.7 17.7 0 0 0 21 5l.6-.7.8-.4H26.9c.4 0 .7.2.8.5l.2.3a2.4 2.4 0 0 1 0 .6v.1c0 .7-.4 1.5-.9 2.2-.5.8-1.1 1.7-2 2.6a27.6 27.6 0 0 0-1.6 2.3c0 .1 0 .3.2.5l3.9 4.6c.2.3.3.5.3.9s-.2.7-.5 1a2 2 0 0 1-1.1.3h-4.6l-.1.1c-.4 0-.8-.2-1.1-.5a241.3 241.3 0 0 1-3-3.3 38.5 38.5 0 0 0-.4 2.3l-.1.4c-.2.6-.6 1-1.1 1h-3c-1.5 0-3-.6-4.4-1.8-1.5-1.3-2.8-3-4-5A47.5 47.5 0 0 1 1 5.3ZM17 12c-.4 0-.7-.1-1-.3a.9.9 0 0 1-.5-.8V5c0-.3 0-.6-.2-.7-.2-.2-.5-.2-1-.2h-1.5c-.7 0-1.3.1-1.7.4.8.3 1.2 1 1.2 1.7v4.4c0 .4-.2.8-.6 1-.3.3-.6.5-1 .5-.6 0-1-.3-1.3-.8-1.3-2-2.4-3.8-3-5.6L6 5.1H2.2v.7l.6 1.4a33 33 0 0 0 4.8 8.6c1.8 2 3.5 3.1 5.2 3.1h2.9l.1-.4v-.3l.6-2.2.3-.6c.2-.2.5-.3.7-.3.5 0 .9.3 1.3.8l2.3 2.7c.2.2.3.3.5.3h4.4c.5 0 .8-.1.8-.4l-.1-.2-3.9-4.6c-.3-.3-.4-.7-.4-1 0-.5.1-.9.4-1.3L24 9.8l1.8-2.2c.5-.7.8-1.3 1-1.9V5.1h-4.2c-.3 0-.5.2-.6.4l-.2.5c-.4 1.1-1.6 3-3.5 5.3-.4.4-.8.6-1.3.6Z"/>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в Ютубе</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="none">
+              <path fill="#666"
+                    d="m17.9 10.8-5.3-3.5a.7.7 0 0 0-1 .5v7a.7.7 0 0 0 1 .6l5.3-3.5a.7.7 0 0 0 0-1.1Zm-5 2.8V9.1l3.4 2.2-3.4 2.3ZM25.4 5a2.4 2.4 0 0 0-1.5-1.6C20.2 2 14.3 2 14 2c-.3 0-6.2 0-10 1.4A2.4 2.4 0 0 0 2.7 5C2.3 6.1 2 8 2 11.3s.3 5.3.6 6.3a2.4 2.4 0 0 0 1.5 1.7c3.7 1.4 9.6 1.4 9.9 1.4.8 0 6.4 0 10-1.4a2.4 2.4 0 0 0 1.4-1.7c.3-1 .6-3 .6-6.3 0-3.2-.3-5.2-.6-6.3ZM24 17.3a1 1 0 0 1-.6.7C20 19.4 14 19.4 14 19.4c0 0-6 0-9.5-1.4a1 1 0 0 1-.6-.7c-.3-1-.6-2.8-.6-6 0-3 .3-5 .6-6a1 1 0 0 1 .6-.7C8 3.3 14 3.3 14 3.3c0 0 6 0 9.5 1.3a1 1 0 0 1 .6.8c.3 1 .6 2.8.6 6 0 3-.3 4.9-.6 6Z"/>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграме</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="none">
+              <path fill="#666" fill-rule="evenodd"
+                    d="m23.5 3.2.2.6L21 19.5a.7.7 0 0 1-1 .5l-8-5.3a.7.7 0 0 1 0-1l2.5-3.2-4.3 2.9h-.7l-5.2-2.6a.7.7 0 0 1 0-1.2L22.8 3c.2 0 .5 0 .7.2ZM6.3 10.3l3.6 1.8 7.5-5a.7.7 0 0 1 .9 1l-4.8 6 6.4 4.2 2.3-13.6-15.9 5.6Z"
+                    clip-rule="evenodd"/>
+            </svg>
+          </a>
         </li>
       </ul>
     </div>

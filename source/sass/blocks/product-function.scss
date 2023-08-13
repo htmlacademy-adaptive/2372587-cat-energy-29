@@ -1,0 +1,83 @@
+.product-function {
+  padding: 0 20px 0 20px;
+}
+
+.product-function__wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.product-function__title {
+  color: #000000;
+  text-align: start;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 20px 0 0 0;
+}
+
+.product-function__list {
+  list-style-type: none;
+  padding: 40px 0 0 0;
+  margin: 0;
+  position: relative;
+}
+
+.product-function__item {
+  margin-bottom: 26px;
+  padding-left: 80px;
+}
+
+.product-function__item--useful::before {
+  content: '';
+  position: absolute;
+  background-image: url("../../images/icon-useful.svg");
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  left: 0px;
+  top: 35px;
+}
+
+.product-function__item--water::before {
+  content: '';
+  position: absolute;
+  background-image: url("../../images/icon-water.svg");
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  left: 0px;
+  top: 115px;
+}
+
+.product-function__item--eat::before {
+  content: '';
+  position: absolute;
+  background-image: url("../../images/icon-eat.svg");
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  left: 0px;
+  top: 195px;
+}
+
+.product-function__item--time::before {
+  content: '';
+  position: absolute;
+  background-image: url("../../images/icon-time.svg");
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  left: 0px;
+  top: 275px;
+}
+
+.product-function__description {
+  color: #444444;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+}
