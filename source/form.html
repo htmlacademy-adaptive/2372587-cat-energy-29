@@ -40,7 +40,7 @@
       <div id='menu' class="main-nav__wrapper wrapper-open">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="#">
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -50,7 +50,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a href="#">
               Подбор программы
             </a>
           </li>
@@ -61,92 +61,99 @@
   </div>
 </header>
 <main class="main-container">
-  <section class="stats">
-    <h1 class="stats__main-title">Функциональное <br>питание для котов</h1>
-    <p class="stats__title">Занялся собой? Займись котом!</p>
-    <img class="stats__product-presentation" src="images/index-food-cat-mobile.png"
-         alt="Баночка еды для кота со вкусом курицы" width="280" height="270">
-    <button class="stats__choose-program" type="button">подобрать программу</button>
+  <div class="stats-form">
+    <h1 class="stats-form__title">Подбор программы</h1>
+    <p class="stats-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+  </div>
+  <section class="order-form">
+    <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+      <fieldset class="form__personal-data">
+        <legend class="visually-hidden">Персональная информация</legend>
+        <label class="form__info">Имя: <em>*</em>
+          <input class="form__info-personal" type="text" name="firstname" placeholder="Барсик"></label>
+        <label class="form__info">Вес (кг): <em>*</em>
+          <input class="form__info-personal" type="number" name="weight" placeholder="7"></label>
+        <label class="form__info">Возраст (лет):
+          <input class="form__info-personal" type="number" name="age" placeholder="7"></label>
+      </fieldset>
+      <fieldset class="form__properties">
+        <legend class="visually-hidden">Желаемый результат</legend>
+        <ul class="form__list-properties">
+          <li class="form__item-properties">
+            <label class="form__control-properties">
+              <input class="form__input-properties" type="radio" name="type properties" value="weight loss" checked>
+              <span class="form__label-properties">Похудение</span>
+            </label>
+          </li>
+          <li class="form__item-properties">
+            <label class="form__control-properties">
+              <input class="form__input-properties" type="radio" name="type properties" value="mass gain">
+              <span class="form__label-properties">Набор массы</span>
+            </label>
+          </li>
+          <li class="form__item-properties">
+            <label class="form__control-properties">
+              <input class="form__input-properties" type="radio" name="type properties" value="need advice">
+              <span class="form__label-properties">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__contact">
+        <legend class="visually-hidden">Контактные данные</legend>
+        <h2 class="form__contact-title">Контактные данные (владельца кота)</h2>
+        <label class="form__contact-label">Email: <em>*</em>
+          <input class="form__contact-details" type="email" name="contact email" value="kuklachev@gmail.com"></label>
+        <label class="form__contact-label">Телефон: <em>*</em>
+          <input class="form__contact-details" type="tel" name="contact email" value="8 (960) 900-60-90"></label>
+      </fieldset>
+      <fieldset class="form__comment">
+        <h2 class="form__comment-title">Комментарий</h2>
+        <textarea class="form__comment-details" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+      </fieldset>
+      <fieldset class="form__additional-items">
+        <legend class="visually-hidden">Дополнительные товары</legend>
+        <h2 class="form__additional-title">Дополнительно</h2>
+        <ul class="form__additional-list">
+          <li class="form__additional-item">
+            <label class="form__additional-label">
+              <input class="form__additional-input" type="checkbox" name="sweetener" checked>
+              <span class="form__additional-product">сахарозаменитель</span>
+            </label>
+          </li>
+          <li class="form__additional-item">
+            <label class="form__additional-label">
+              <input class="form__additional-input" type="checkbox" name="water">
+              <span class="form__additional-product">питьевая вода</span>
+            </label>
+          </li>
+          <li class="form__additional-item">
+            <label class="form__additional-label">
+              <input class="form__additional-input" type="checkbox" name="milk">
+              <span class="form__additional-product">молоко</span>
+            </label>
+          </li>
+          <li class="form__additional-item">
+            <label class="form__additional-label">
+              <input class="form__additional-input" type="checkbox" name="vitamins">
+              <span class="form__additional-product">витамины</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <div class="form__button">
+        <button class="form__send-application" type="submit">отправить заявку</button>
+        <p class="form__button-note">* — Обязательные поля</p>
+      </div>
+    </form>
   </section>
-  <section class="advantages">
-    <div class="advantages__wrapper">
-      <h2 class="visually-hidden">Наши преимущества</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <h3 class="advantages__title advantages__title--slim">Похудение</h3>
-          <p class="advantages__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-            Пора на диету!
-            Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="advantages__catalog" href="#">Каталог slim</a>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title advantages__title--pro">Набор массы</h3>
-          <p class="advantages__description">Заработать авторитет среди дворовых котов и даже собак?
-            Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="advantages__catalog" href="#">Каталог pro</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="product-function">
-    <div class="product-function__wrapper">
-      <h2 class="product-function__title">Как это работает</h2>
-      <ul class="product-function__list">
-        <li class="product-function__item product-function__item--useful">
-          <p class="product-function__description">Функциональное питание
-            содержит только полезные
-            питательные вещества.</p>
-        </li>
-        <li class="product-function__item product-function__item--water">
-          <p class="product-function__description">Выпускается в виде порошка,
-            который нужно лишь залить
-            кипятком и готово.</p>
-        </li>
-        <li class="product-function__item product-function__item--eat">
-          <p class="product-function__description">Замените один-два приема
-            обычной еды на наше
-            функциональное питание.</p>
-        </li>
-        <li class="product-function__item product-function__item--time">
-          <p class="product-function__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего
-            питомца!</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="example">
-    <h2 class="example__main-title">Живой пример</h2>
-    <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-      Отличный результат без изнуряющих тренировок!
-      При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-    <ul class="example__list">
-      <li class="example__item">
-        <h3 class="example__item-title">5 КГ</h3>
-        <p class="example__item-description">снижение веса</p>
-      </li>
-      <li class="example__item">
-        <h3 class="example__item-title">60 ДНЕЙ</h3>
-        <p class="example__item-description">затрачено времени</p>
-      </li>
-    </ul>
-    <h3 class="example__title">Затраты на питание: 15 000 РУБ. </h3>
-    <div class="example__images slider">
-      <img class="slider__cat-before" src="images/cat-before-mobile.png" alt="упитанный кот ДО" width="280"
-           height="256">
-      <img class="slider__cat-after" src="images/cat-after-mobile.png" alt="похудевший кот ПОСЛЕ" width="280"
-           height="256">
-      <span class="slider__images">Слайдер меняет котиков</span>
-    </div>
-  </section>
-  <section class="company-address">
+  <section class="company-address company-address__form">
     <div class="company-address__wrapper">
-      <h2 class="company-address__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="company-address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <h2 class="company-address__title">Приглашаем к сотрудничеству дилеров!</h2>
+    <p class="company-address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
     <div class="company-address__maps">
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e13661316e90b1716b245ff04f35bf65a6afae241b2916416bb271dade71678&amp;source=constructor"
-        width="320" height="362" frameborder="0"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e13661316e90b1716b245ff04f35bf65a6afae241b2916416bb271dade71678&amp;source=constructor" width="320" height="362" frameborder="0"></iframe>
     </div>
   </section>
 </main>
@@ -192,8 +199,7 @@
     <div class="main-footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__website">HTML Academy</p>
-        <svg class="copyright__image" xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none"
-             viewBox="0 0 27 34">
+        <svg class="copyright__image" xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none">
           <g clip-path="url(#a)">
             <path fill="#666" d="M13.6 0h-.1L0 1.4V26l13.5 8L27 26V1.4L13.6 0Zm11.6 25-11.7 7-11.7-7V15l11.7 6.8v1.3l-8-4.7v1.2l8
           4.8v1.3l-8-4.8v1.2l8 4.9 8.1-4.9V17l3.6-2.1V25Zm0-11.5L22 15.3l-1.5 1-7-4.3v1.2l6 3.6-.2.1-.8.5-5-3v1.3l3.9 2.3-1 .6-3-1.7v1.2l2

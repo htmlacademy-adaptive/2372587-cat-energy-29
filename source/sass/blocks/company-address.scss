@@ -1,0 +1,28 @@
+.company-address__catalog,
+.company-address__form {
+  background-color: #f2f2f2;
+}
+
+.company-address__wrapper {
+  padding: 26px 20px 26px 20px;
+  display: flex;
+}
+
+.company-address__title {
+  color: #111111;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.company-address__description {
+  color: #444444;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}

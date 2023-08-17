@@ -1,0 +1,235 @@
+.order-form {
+  padding: 0 20px;
+}
+
+.form__personal-data {
+  margin: 0;
+  padding: 0 0 24px 0;
+  position: relative;
+  border: none;
+}
+
+.form__info {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 14px;
+  height: 45px;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.form__info-personal {
+  flex-grow: 1;
+  margin-left: 13px;
+  height: 45px;
+  display: flex;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  padding: 14px 15px 13px 15px;
+  border: 1px solid #e7e7e7;
+}
+
+.form__properties {
+  padding: 22px 0 45px 0;
+  border: none;
+}
+
+.form__list-properties {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form__item-properties {
+  margin-bottom: 13px;
+  height: 30px;
+}
+
+.form__control-properties {
+  display: block;
+  height: 30px;
+}
+
+.form__label-properties {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  height: 30px;
+}
+
+.form__contact {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.form__contact-title {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  position: relative;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
+.form__contact-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  padding-bottom: 14px;
+  height: 45px;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.form__contact-details {
+  flex-grow: 1;
+  margin-left: 13px;
+  height: 45px;
+  display: flex;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  padding: 14px 15px 13px 15px;
+  border: 1px solid #cdcdcd;
+}
+
+.form__comment {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.form__comment-title {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 38px;
+}
+
+.form__comment-details {
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  padding: 14px 14px 13px 15px;
+  border: 1px solid #cdcdcd;
+  resize: none;
+  width: 280px;
+  min-height: 150px;
+}
+
+.form__additional-items {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.form__additional-title {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+  padding-top: 23px;
+  padding-bottom: 36px;
+}
+
+.form__additional-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form__additional-item {
+  margin-bottom: 13px;
+  height: 30px;
+}
+
+.form__additional-label {
+  display: block;
+  height: 30px;
+}
+
+.form__additional-input {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.form__additional-product {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.form__button {
+  padding-top: 34px;
+}
+
+.form__send-application {
+  background-color: #68b738;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 0;
+  padding: 10px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.form__button-note {
+  color: #000000;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+  padding: 21px 0 32px 0;
+}

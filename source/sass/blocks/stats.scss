@@ -1,0 +1,52 @@
+.stats {
+  background-image: linear-gradient(#68B738D9 100%, transparent 85%),
+  url("../../images/cat-background-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+}
+
+.stats__main-title {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0;
+  padding-top: 27px;
+}
+
+.stats__title {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-top: 25px;
+}
+
+.stats__product-presentation {
+  padding-top: 29px;
+  display: block;
+  margin: 0 auto;
+}
+
+.stats__choose-program {
+  background-color: #68b738;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 0;
+  padding: 10px 0;
+  width: 88%;
+  cursor: pointer;
+  margin-left: 20px;
+}

@@ -1,0 +1,89 @@
+.advantages {
+  padding: 0 20px 0 20px;
+}
+
+.advantages__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__item {
+  max-width: 280px;
+  background-color: #F2F2F2;
+  padding: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.advantages__title {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 90px;
+}
+
+.advantages__title--slim::before {
+  content: '';
+  position: absolute;
+  background-image: url("../../images/cat-sitting.png");
+  background-repeat: no-repeat;
+  height: 53px;
+  width: 50px;
+  padding-right: 20px;
+  left: 20px;
+  top: 40px;
+}
+
+.advantages__title--pro::before {
+  content: '';
+  position: absolute;
+  background-image: url("../../images/cat-go.png");
+  background-repeat: no-repeat;
+  height: 53px;
+  width: 50px;
+  padding-right: 20px;
+  left: 20px;
+  top: 40px;
+}
+
+.advantages__description {
+  color: #444444;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  max-width: 227px;
+  margin: 0;
+  padding-top: 29px;
+  position: relative;
+}
+
+.advantages__description::after {
+  content: "";
+  height: 1px;
+  width: 240px;
+  position: absolute;
+  background-color: #d9d9d9;
+  left: 0px;
+  top: 140px;
+}
+
+.advantages__catalog {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 42px;
+  display: block;
+  text-align: start;
+}
