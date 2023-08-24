@@ -1,6 +1,14 @@
+@import "../general";
+
 .main-footer {
   width: 320px;
   margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .main-footer__wrapper {
@@ -8,20 +16,34 @@
   background-color: #f2f2f2;
   padding: 40px 20px 40px 20px;
   position: relative;
+  @media (min-width: $tablet-width) {
+    padding: 55px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+  }
 }
 
 .main-footer__logo::after {
-  content: "";
-  height: 1px;
-  width: 280px;
-  position: absolute;
-  background-color: #d9d9d9;
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    height: 1px;
+    width: 280px;
+    position: absolute;
+    background-color: #d9d9d9;
+  }
 }
 
 .main-footer__logo-image {
   display: block;
   margin: 0 auto;
   padding-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: auto;
+  }
 }
 
 .main-footer__social {
@@ -30,15 +52,21 @@
   margin-bottom: 20px;
   justify-content: center;
   position: relative;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    align-items: center;
+  }
 }
 
 .main-footer__social::after {
-  content: "";
-  height: 1px;
-  width: 280px;
-  position: absolute;
-  background-color: #d9d9d9;
-  bottom: -20px;
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    height: 1px;
+    width: 280px;
+    position: absolute;
+    background-color: #d9d9d9;
+    bottom: -20px;
+  }
 }
 
 .social__list {
@@ -61,19 +89,29 @@
 
 .main-footer__copyright {
   padding: 20px 0 0 0;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .copyright {
-  display: flex;
-  justify-content: space-between;
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .copyright__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 280px;
   text-decoration: none;
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
+  }
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
 }
 
 .copyright__website {

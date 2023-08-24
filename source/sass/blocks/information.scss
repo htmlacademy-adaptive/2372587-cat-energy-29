@@ -1,14 +1,26 @@
+@import "../general";
+
 .information {
   padding: 35px 20px;
   position: relative;
-}
+  @media (min-width: $tablet-width) {
+    min-width: 707px;
+    padding: 70px 30px 75px 31px;
+  }
+  }
 
 .information__wrapper {
-  background-image: linear-gradient(#68B738D9 100%, transparent 85%),
+  background-image: linear-gradient(#68b738d9 100%, transparent 85%),
   url("../../images/catalog/cat-in-bag.png");
   background-repeat: no-repeat;
   background-size: 280px 290px;
-}
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(#68b738d9 100%, transparent 85%),
+    url("../../images/catalog/cat-in-bag-desctop.png");
+    background-repeat: no-repeat;
+    background-size: 707px 200px;
+  }
+  }
 
 .information__description {
   color: #ffffff;
@@ -19,6 +31,12 @@
   line-height: 20px;
   margin: 0;
   padding: 187px 61px 43px 58px;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 161px;
+    padding: 71px 125px 69px 421px;
+  }
 }
 
 .present::before {
@@ -31,4 +49,11 @@
   top: 90px;
   left: 115px;
   z-index: 4;
-}
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 83px;
+    top: 130px;
+    left: 110px;
+  }
+
+  }

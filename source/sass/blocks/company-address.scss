@@ -1,3 +1,5 @@
+@import "../general";
+
 .company-address__catalog,
 .company-address__form {
   background-color: #f2f2f2;
@@ -6,6 +8,20 @@
 .company-address__wrapper {
   padding: 26px 20px 26px 20px;
   display: flex;
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+    justify-content: space-between;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 565px;
+    position: absolute;
+    z-index: 4;
+    background-color: #ffffff;
+    padding: 61px 78px 60px 80px;
+    gap: 87px;
+    top: 2410px;
+    left: 460px;
+  }
 }
 
 .company-address__title {
@@ -16,6 +32,12 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 163px;
+
+  }
 }
 
 .company-address__description {
@@ -25,4 +47,33 @@
   font-weight: 400;
   line-height: 20px;
   margin: 0;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+    max-width: 157px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.company-address__city {
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+  }
+}
+
+.company-address__maps {
+  width: 320px;
+  height: 362px;
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 400px;
+    position: relative;
+  }
 }

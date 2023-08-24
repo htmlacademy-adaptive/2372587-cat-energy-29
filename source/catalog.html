@@ -31,7 +31,7 @@
         </defs>
       </svg>
       <img class="main-header__logo-image" src="images/header-logo.svg" width="101" height="18"
-           alt="CAT ENERGY">
+            alt="CAT ENERGY">
     </a>
     <nav class="main-nav">
       <button id='burger' class="main-nav__toggle menu-close" type="button">
@@ -68,7 +68,7 @@
         <div class="product__list">
           <a class="product__page" href="#">
             <img class="product__image-product" src="images/catalog/chicken-small-mobile.png"
-                 alt="Банка с курицей 500 грамм" width="68" height="86">
+                  alt="Банка с курицей 500 грамм" width="68" height="86">
           </a>
           <div class="product__wrapper">
             <a class="product__page" href="#">
@@ -98,7 +98,7 @@
         <div class="product__list">
           <a class="product__page" href="#">
             <img class="product__image-product" src="images/catalog/chicken-big-mobile.png"
-                 alt="Банка с курицей 1000 грамм" width="84" height="100">
+                  alt="Банка с курицей 1000 грамм" width="84" height="100">
           </a>
           <div class="product__wrapper">
             <a class="product__page" href="#">
@@ -128,7 +128,7 @@
         <div class="product__list">
           <a class="product__page" href="#">
             <img class="product__image-product" src="images/catalog/fish-small-mobile.png"
-                 alt="Банка с рыбой 500 грамм" width="68" height="86">
+                  alt="Банка с рыбой 500 грамм" width="68" height="86">
           </a>
           <div class="product__wrapper">
             <a class="product__page" href="#">
@@ -158,7 +158,7 @@
         <div class="product__list">
           <a class="product__page" href="#">
             <img class="product__image-product" src="images/catalog/fish-big-mobile.png"
-                 alt="Банка с рыбой 1000 грамм" width="84" height="100">
+                  alt="Банка с рыбой 1000 грамм" width="84" height="100">
           </a>
           <div class="product__wrapper">
             <a class="product__page" href="#">
@@ -188,7 +188,7 @@
         <div class="product__list">
           <a class="product__page" href="#">
             <img class="product__image-product" src="images/catalog/buckwheat-small-mobile.png"
-                 alt="Банка с гречкой 500 грамм" width="68" height="86">
+                  alt="Банка с гречкой 500 грамм" width="68" height="86">
           </a>
           <div class="product__wrapper">
             <a class="product__page" href="#">
@@ -218,7 +218,7 @@
         <div class="product__list">
           <a class="product__page" href="#">
             <img class="product__image-product" src="images/catalog/buckwheat-big-mobile.png"
-                 alt="Банка с гречкой 1000 грамм" width="84" height="100">
+                  alt="Банка с гречкой 1000 грамм" width="84" height="100">
           </a>
           <div class="product__wrapper">
             <a class="product__page" href="#">
@@ -248,7 +248,7 @@
         <div class="product__list">
           <a class="product__page" href="#">
             <img class="product__image-product" src="images/catalog/rice-small-mobile.png"
-                 alt="Банка с рисом 500 грамм" width="68" height="86">
+                  alt="Банка с рисом 500 грамм" width="68" height="86">
           </a>
           <div class="product__wrapper">
             <a class="product__page" href="#">
@@ -275,15 +275,19 @@
         <button class="product__choose" type="button" onclick="document.location='form.html'">заказать</button>
       </li>
       <li class="catalog__item all-product">
-        <h2 class="visually-hidden">Посмотреть все товары</h2>
-        <svg class="all-product__more-products" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
-          <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0"/>
-        </svg>
-        <h3 class="all-product__title">Показать еще 100500 товаров</h3>
-        <p class="all-product__description">На самом деле вкусов гораздо больше!</p>
+        <div class="all-product__list">
+          <div class="all-product__wrapper">
+            <h2 class="visually-hidden">Посмотреть все товары</h2>
+            <svg class="all-product__more-products" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
+              <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0"/>
+            </svg>
+            <h3 class="all-product__title">Показать еще 100500 товаров</h3>
+            <p class="all-product__description">На самом деле вкусов гораздо больше!</p>
+          </div>
         <a class="all-product__page" href="#">
           <button class="all-product__choose product__choose" type="button">показать все</button>
         </a>
+        </div>
       </li>
     </ul>
   </section>
@@ -292,34 +296,42 @@
       <h2 class="additional__title">Дополнительные товары</h2>
       <ul class="additional__list">
         <li class="additional__item">
-          <h3 class="additional__title-product">Сахарозаменитель</h3>
-          <div class="additional__wrapper">
-            <span class="additional__description">1 упаковка (100 г)</span>
-            <b class="additional__description-price">200 ₽</b>
+          <div class="additional__item-block">
+            <h3 class="additional__title-product">Сахарозаменитель</h3>
+           <div class="additional__wrapper">
+             <span class="additional__description">1 упаковка (100 г)</span>
+              <b class="additional__description-price">200 ₽</b>
+            </div>
           </div>
           <button class="additional__choose product__choose" type="button">заказать</button>
         </li>
         <li class="additional__item">
+          <div class="additional__item-block">
           <h3 class="additional__title-product">Питьевая вода</h3>
           <div class="additional__wrapper">
             <span class="additional__description">5 литров</span>
             <b class="additional__description-price">50 ₽</b>
           </div>
+          </div>
           <button class="additional__choose product__choose" type="button">заказать</button>
         </li>
         <li class="additional__item">
+          <div class="additional__item-block">
           <h3 class="additional__title-product">молоко</h3>
           <div class="additional__wrapper">
             <span class="additional__description">1 литр</span>
             <b class="additional__description-price">100 ₽</b>
           </div>
+          </div>
           <button class="additional__choose product__choose" type="button">заказать</button>
         </li>
         <li class="additional__item">
+          <div class="additional__item-block">
           <h3 class="additional__title-product">витамины</h3>
           <div class="additional__wrapper">
             <span class="additional__description">1 упаковка (30 г)</span>
             <b class="additional__description-price">300 ₽</b>
+          </div>
           </div>
           <button class="additional__choose product__choose" type="button">заказать</button>
         </li>
@@ -332,15 +344,15 @@
       <p class="information__description present">Закажите все и получите чехол для кота в подарок!</p>
     </div>
   </section>
-  <section class="company-address company-address__catalog">
-    <div class="company-address__wrapper">
+  <section class="company-address">
+    <div class="company-address__wrapper company-address__catalog">
       <h2 class="company-address__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="company-address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="company-address__description">ул. Большая Конюшенная, д. 19/8 <span class="company-address__city">Санкт-Петербург</span></p>
     </div>
     <div class="company-address__maps">
       <iframe
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e13661316e90b1716b245ff04f35bf65a6afae241b2916416bb271dade71678&amp;source=constructor"
-        width="320" height="362" frameborder="0"></iframe>
+        width="100%" height="100%" frameborder="0"></iframe>
     </div>
   </section>
 </main>
@@ -348,7 +360,7 @@
   <div class="main-footer__wrapper">
     <a class="main-footer__logo">
       <img class="main-footer__logo-image" src="images/header-logo.svg" width="128" height="24"
-           alt="CAT ENERGY">
+            alt="CAT ENERGY">
     </a>
     <div class="main-footer__social">
       <h2 class="visually-hidden">Наши соцсети</h2>

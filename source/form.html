@@ -31,7 +31,7 @@
         </defs>
       </svg>
       <img class="main-header__logo-image" src="images/header-logo.svg" width="101" height="18"
-           alt="CAT ENERGY">
+            alt="CAT ENERGY">
     </a>
     <nav class="main-nav">
       <button id='burger' class="main-nav__toggle menu-close" type="button">
@@ -81,19 +81,22 @@
         <ul class="form__list-properties">
           <li class="form__item-properties">
             <label class="form__control-properties">
-              <input class="form__input-properties" type="radio" name="type properties" value="weight loss" checked>
+              <input class="form__input-properties visually-hidden" type="radio" name="type properties" value="weight loss" checked>
+              <span class="form__control-radio"></span>
               <span class="form__label-properties">Похудение</span>
             </label>
           </li>
           <li class="form__item-properties">
             <label class="form__control-properties">
-              <input class="form__input-properties" type="radio" name="type properties" value="mass gain">
+              <input class="form__input-properties visually-hidden" type="radio" name="type properties" value="mass gain">
+              <span class="form__control-radio"></span>
               <span class="form__label-properties">Набор массы</span>
             </label>
           </li>
           <li class="form__item-properties">
             <label class="form__control-properties">
-              <input class="form__input-properties" type="radio" name="type properties" value="need advice">
+              <input class="form__input-properties visually-hidden" type="radio" name="type properties" value="need advice">
+              <span class="form__control-radio"></span>
               <span class="form__label-properties">Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
@@ -117,25 +120,29 @@
         <ul class="form__additional-list">
           <li class="form__additional-item">
             <label class="form__additional-label">
-              <input class="form__additional-input" type="checkbox" name="sweetener" checked>
+              <input class="form__additional-input visually-hidden" type="checkbox" name="sweetener" checked>
+              <span class="form__additional-mark"></span>
               <span class="form__additional-product">сахарозаменитель</span>
             </label>
           </li>
           <li class="form__additional-item">
             <label class="form__additional-label">
-              <input class="form__additional-input" type="checkbox" name="water">
+              <input class="form__additional-input visually-hidden" type="checkbox" name="water">
+              <span class="form__additional-mark"></span>
               <span class="form__additional-product">питьевая вода</span>
             </label>
           </li>
           <li class="form__additional-item">
             <label class="form__additional-label">
-              <input class="form__additional-input" type="checkbox" name="milk">
+              <input class="form__additional-input visually-hidden" type="checkbox" name="milk">
+              <span class="form__additional-mark"></span>
               <span class="form__additional-product">молоко</span>
             </label>
           </li>
           <li class="form__additional-item">
             <label class="form__additional-label">
-              <input class="form__additional-input" type="checkbox" name="vitamins">
+              <input class="form__additional-input visually-hidden" type="checkbox" name="vitamins">
+              <span class="form__additional-mark"></span>
               <span class="form__additional-product">витамины</span>
             </label>
           </li>
@@ -149,11 +156,13 @@
   </section>
   <section class="company-address company-address__form">
     <div class="company-address__wrapper">
-    <h2 class="company-address__title">Приглашаем к сотрудничеству дилеров!</h2>
-    <p class="company-address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <h2 class="company-address__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <p class="company-address__description">ул. Большая Конюшенная, д. 19/8 <span class="company-address__city">Санкт-Петербург</span></p>
     </div>
     <div class="company-address__maps">
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e13661316e90b1716b245ff04f35bf65a6afae241b2916416bb271dade71678&amp;source=constructor" width="320" height="362" frameborder="0"></iframe>
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e13661316e90b1716b245ff04f35bf65a6afae241b2916416bb271dade71678&amp;source=constructor"
+        width="100%" height="100%" frameborder="0"></iframe>
     </div>
   </section>
 </main>
@@ -161,7 +170,7 @@
   <div class="main-footer__wrapper">
     <a class="main-footer__logo">
       <img class="main-footer__logo-image" src="images/header-logo.svg" width="128" height="24"
-           alt="CAT ENERGY">
+            alt="CAT ENERGY">
     </a>
     <div class="main-footer__social">
       <h2 class="visually-hidden">Наши соцсети</h2>

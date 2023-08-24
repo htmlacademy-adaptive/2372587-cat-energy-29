@@ -1,5 +1,13 @@
+@import "../general";
+
 .product-function {
   padding: 0 20px 0 20px;
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 0 30px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 0 106px;
+  }
 }
 
 .product-function__wrapper {
@@ -14,19 +22,55 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  margin: 20px 0 0 0;
+  padding: 20px 0 0 0;
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 45px;
+    margin: 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+  }
 }
 
 .product-function__list {
   list-style-type: none;
-  padding: 40px 0 0 0;
-  margin: 0;
-  position: relative;
+  @media (max-width: $mobile-width-only) {
+    padding: 40px 0 0 0;
+    margin: 0;
+    position: relative;
+  }
+  @media (min-width: $tablet-width) {
+    padding: 32px 0 47px 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 32px 0 69px 0;
+  }
 }
 
 .product-function__item {
   margin-bottom: 26px;
   padding-left: 80px;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    min-width: 230px;
+    min-height: 280px;
+    padding: 0;
+    margin-bottom: 37px;
+  }
+}
+
+.product-function__item--useful {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/number-one.png");
+    background-repeat: no-repeat;
+    background-position: bottom 20px right 50px;
+  }
 }
 
 .product-function__item--useful::before {
@@ -36,8 +80,22 @@
   background-repeat: no-repeat;
   height: 60px;
   width: 60px;
-  left: 0px;
+  left: 0;
   top: 35px;
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/icon-useful-desctop.png");
+    top: 31px;
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.product-function__item--water {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/number-two.png");
+    background-repeat: no-repeat;
+    background-position: bottom 20px right 10px;
+  }
 }
 
 .product-function__item--water::before {
@@ -47,8 +105,22 @@
   background-repeat: no-repeat;
   height: 60px;
   width: 60px;
-  left: 0px;
+  left: 0;
   top: 115px;
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/icon-water.png");
+    top: 31px;
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.product-function__item--eat {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/number-three.png");
+    background-repeat: no-repeat;
+    background-position: bottom 20px right 10px;
+  }
 }
 
 .product-function__item--eat::before {
@@ -58,8 +130,22 @@
   background-repeat: no-repeat;
   height: 60px;
   width: 60px;
-  left: 0px;
+  left: 0;
   top: 195px;
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/icon-eat-desctop.png");
+    top: 31px;
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.product-function__item--time {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/number-four.png");
+    background-repeat: no-repeat;
+    background-position: bottom 20px right 10px;
+  }
 }
 
 .product-function__item--time::before {
@@ -69,8 +155,14 @@
   background-repeat: no-repeat;
   height: 60px;
   width: 60px;
-  left: 0px;
+  left: 0;
   top: 275px;
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/icon-time-desctop.png");
+    top: 31px;
+    height: 80px;
+    width: 80px;
+  }
 }
 
 .product-function__description {
@@ -80,4 +172,10 @@
   font-weight: 400;
   line-height: 18px;
   margin: 0;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 245px;
+    padding: 151px 0 57px 0;
+  }
 }
