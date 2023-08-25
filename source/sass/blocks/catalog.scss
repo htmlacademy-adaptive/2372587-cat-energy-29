@@ -53,4 +53,7 @@
     gap: 60px;
     align-items: flex-end;
   }
+  @media (min-width: $desktop-width) {
+    gap: 73px;
+  }
 }

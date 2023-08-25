@@ -31,7 +31,7 @@
         </defs>
       </svg>
       <img class="main-header__logo-image" src="images/header-logo.svg" width="101" height="18"
-            alt="CAT ENERGY">
+           alt="CAT ENERGY">
     </a>
     <nav class="main-nav">
       <button id='burger' class="main-nav__toggle menu-close" type="button">
@@ -67,52 +67,60 @@
   </div>
   <section class="order-form">
     <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-      <fieldset class="form__personal-data">
-        <legend class="visually-hidden">Персональная информация</legend>
-        <label class="form__info">Имя: <em>*</em>
-          <input class="form__info-personal" type="text" name="firstname" placeholder="Барсик"></label>
-        <label class="form__info">Вес (кг): <em>*</em>
-          <input class="form__info-personal" type="number" name="weight" placeholder="7"></label>
-        <label class="form__info">Возраст (лет):
-          <input class="form__info-personal" type="number" name="age" placeholder="7"></label>
-      </fieldset>
-      <fieldset class="form__properties">
-        <legend class="visually-hidden">Желаемый результат</legend>
-        <ul class="form__list-properties">
-          <li class="form__item-properties">
-            <label class="form__control-properties">
-              <input class="form__input-properties visually-hidden" type="radio" name="type properties" value="weight loss" checked>
-              <span class="form__control-radio"></span>
-              <span class="form__label-properties">Похудение</span>
-            </label>
-          </li>
-          <li class="form__item-properties">
-            <label class="form__control-properties">
-              <input class="form__input-properties visually-hidden" type="radio" name="type properties" value="mass gain">
-              <span class="form__control-radio"></span>
-              <span class="form__label-properties">Набор массы</span>
-            </label>
-          </li>
-          <li class="form__item-properties">
-            <label class="form__control-properties">
-              <input class="form__input-properties visually-hidden" type="radio" name="type properties" value="need advice">
-              <span class="form__control-radio"></span>
-              <span class="form__label-properties">Не знаю (Нужен ваш совет)</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+      <div class="form__section-personal">
+        <fieldset class="form__personal-data">
+          <legend class="visually-hidden">Персональная информация</legend>
+          <label class="form__info">Имя: <em>*</em>
+            <input class="form__info-personal" type="text" name="firstname" placeholder="Барсик"></label>
+          <label class="form__info">Вес (кг): <em>*</em>
+            <input class="form__info-personal" type="number" name="weight" placeholder="7"></label>
+          <label class="form__info">Возраст (лет):
+            <input class="form__info-personal" type="number" name="age" placeholder="7"></label>
+        </fieldset>
+        <fieldset class="form__properties">
+          <legend class="visually-hidden">Желаемый результат</legend>
+          <ul class="form__list-properties">
+            <li class="form__item-properties">
+              <label class="form__control-properties">
+                <input class="form__input-properties visually-hidden" type="radio" name="type properties"
+                       value="weight loss" checked>
+                <span class="form__control-radio"></span>
+                <span class="form__label-properties">Похудение</span>
+              </label>
+            </li>
+            <li class="form__item-properties">
+              <label class="form__control-properties">
+                <input class="form__input-properties visually-hidden" type="radio" name="type properties"
+                       value="mass gain">
+                <span class="form__control-radio"></span>
+                <span class="form__label-properties">Набор массы</span>
+              </label>
+            </li>
+            <li class="form__item-properties">
+              <label class="form__control-properties">
+                <input class="form__input-properties visually-hidden" type="radio" name="type properties"
+                       value="need advice">
+                <span class="form__control-radio"></span>
+                <span class="form__label-properties">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="form__contact">
         <legend class="visually-hidden">Контактные данные</legend>
         <h2 class="form__contact-title">Контактные данные (владельца кота)</h2>
-        <label class="form__contact-label">Email: <em>*</em>
-          <input class="form__contact-details" type="email" name="contact email" value="kuklachev@gmail.com"></label>
-        <label class="form__contact-label">Телефон: <em>*</em>
-          <input class="form__contact-details" type="tel" name="contact email" value="8 (960) 900-60-90"></label>
+        <div class="form__container-contact">
+          <label class="form__contact-label">Email: <em>*</em>
+            <input class="form__contact-details" type="email" name="contact email" value="kuklachev@gmail.com"></label>
+          <label class="form__contact-label">Телефон: <em>*</em>
+            <input class="form__contact-details" type="tel" name="contact email" value="8 (960) 900-60-90"></label>
+        </div>
       </fieldset>
       <fieldset class="form__comment">
         <h2 class="form__comment-title">Комментарий</h2>
-        <textarea class="form__comment-details" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="form__comment-details" name="comment"
+                  placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__additional-items">
         <legend class="visually-hidden">Дополнительные товары</legend>
@@ -157,7 +165,8 @@
   <section class="company-address company-address__form">
     <div class="company-address__wrapper">
       <h2 class="company-address__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="company-address__description">ул. Большая Конюшенная, д. 19/8 <span class="company-address__city">Санкт-Петербург</span></p>
+      <p class="company-address__description">ул. Большая Конюшенная, д. 19/8 <span class="company-address__city">Санкт-Петербург</span>
+      </p>
     </div>
     <div class="company-address__maps">
       <iframe
@@ -170,7 +179,7 @@
   <div class="main-footer__wrapper">
     <a class="main-footer__logo">
       <img class="main-footer__logo-image" src="images/header-logo.svg" width="128" height="24"
-            alt="CAT ENERGY">
+           alt="CAT ENERGY">
     </a>
     <div class="main-footer__social">
       <h2 class="visually-hidden">Наши соцсети</h2>

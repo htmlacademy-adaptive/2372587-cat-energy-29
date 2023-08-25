@@ -5,6 +5,19 @@
   @media (min-width: $tablet-width) {
     padding: 0 70px
   }
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 0 110px;
+  }
+}
+
+.form__section-personal {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 1220px;
+    align-content: space-between;
+    gap: 80px;
+    padding-top: 66px;
+  }
 }
 
 .form__personal-data {
@@ -14,6 +27,10 @@
   border: none;
   @media (min-width: $tablet-width) {
     padding: 66px 0 0 0;
+  }
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 0;
   }
 }
 
@@ -59,6 +76,9 @@
   @media (min-width: $tablet-width) {
     padding: 72px 0 65px 0;
   }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .form__list-properties {
@@ -72,6 +92,9 @@
     border: 1px solid #e7e7e7;
     padding: 28px 27px 32px 27px;
     gap: 23px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 570px;
   }
 }
 
@@ -150,6 +173,16 @@
     line-height: 36px;
     padding-bottom: 76px;
   }
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
+}
+
+.form__container-contact {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 80px;
+  }
 }
 
 .form__contact-label {
@@ -168,6 +201,9 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 20px;
     font-size: 20px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 570px;
   }
 }
 
@@ -212,6 +248,10 @@
     padding-top: 45px;
     padding-bottom: 87px;
   }
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    padding-bottom: 78px;
+  }
 }
 
 .form__comment-details {
@@ -232,6 +272,9 @@
     line-height: 30px;
     width: 628px;
     min-height: 175px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }
 
@@ -257,6 +300,10 @@
     padding-top: 65px;
     padding-bottom: 62px;
   }
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    padding-bottom: 57px;
+  }
 }
 
 .form__additional-list {
@@ -268,6 +315,10 @@
     grid-template-columns: repeat(2, 284px);
     row-gap: 32px;
     column-gap: 60px;
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
   }
 }
 
@@ -363,6 +414,10 @@
     display: flex;
     gap: 60px;
   }
+  @media (min-width: $desktop-width) {
+    padding-top: 65px;
+    padding-bottom: 79px;
+  }
 }
 
 .form__send-application {
@@ -384,6 +439,9 @@
     padding: 14px 45px;
     width: 284px;
     max-height: 54px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 570px;
   }
 }
 

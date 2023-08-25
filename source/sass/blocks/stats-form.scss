@@ -5,6 +5,9 @@
   @media (min-width: $tablet-width) {
     padding: 0 70px;
   }
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 0 110px;
+  }
 }
 
 .stats-form__title {
@@ -20,6 +23,9 @@
     font-size: 60px;
     line-height: 60px;
     padding: 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 32px;
   }
 }
 
