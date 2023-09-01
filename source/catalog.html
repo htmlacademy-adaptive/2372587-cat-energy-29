@@ -39,12 +39,12 @@
       </button>
       <div id='menu' class="main-nav__wrapper wrapper-open">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a href="#">
               Каталог продукции
             </a>
@@ -275,72 +275,90 @@
         <button class="product__choose" type="button" onclick="document.location='form.html'">заказать</button>
       </li>
       <li class="catalog__item all-product">
-        <h2 class="visually-hidden">Посмотреть все товары</h2>
-        <svg class="all-product__more-products" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
-          <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0"/>
-        </svg>
-        <h3 class="all-product__title">Показать еще 100500 товаров</h3>
-        <p class="all-product__description">На самом деле вкусов гораздо больше!</p>
-        <a class="all-product__page" href="#">
-          <button class="all-product__choose product__choose" type="button">показать все</button>
-        </a>
+        <div class="all-product__list">
+          <div class="all-product__wrapper">
+            <h2 class="visually-hidden">Посмотреть все товары</h2>
+            <svg class="all-product__more-products" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                 fill="none">
+              <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0"/>
+            </svg>
+            <h3 class="all-product__title">Показать еще 100500 товаров</h3>
+            <p class="all-product__description">На самом деле вкусов гораздо больше!</p>
+          </div>
+          <a class="all-product__page" href="#">
+            <button class="all-product__choose product__choose" type="button">показать все</button>
+          </a>
+        </div>
       </li>
     </ul>
   </section>
   <section class="additional">
     <div class="additional__products">
       <h2 class="additional__title">Дополнительные товары</h2>
-      <ul class="additional__list">
-        <li class="additional__item">
-          <h3 class="additional__title-product">Сахарозаменитель</h3>
-          <div class="additional__wrapper">
-            <span class="additional__description">1 упаковка (100 г)</span>
-            <b class="additional__description-price">200 ₽</b>
+      <div class="additional__container-desktop">
+        <ul class="additional__list">
+          <li class="additional__item">
+            <div class="additional__item-block">
+              <h3 class="additional__title-product">Сахарозаменитель</h3>
+              <div class="additional__wrapper">
+                <span class="additional__description">1 упаковка (100 г)</span>
+                <b class="additional__description-price">200 ₽</b>
+              </div>
+            </div>
+            <button class="additional__choose product__choose" type="button">заказать</button>
+          </li>
+          <li class="additional__item">
+            <div class="additional__item-block">
+              <h3 class="additional__title-product">Питьевая вода</h3>
+              <div class="additional__wrapper">
+                <span class="additional__description">5 литров</span>
+                <b class="additional__description-price">50 ₽</b>
+              </div>
+            </div>
+            <button class="additional__choose product__choose" type="button">заказать</button>
+          </li>
+          <li class="additional__item">
+            <div class="additional__item-block">
+              <h3 class="additional__title-product">молоко</h3>
+              <div class="additional__wrapper">
+                <span class="additional__description">1 литр</span>
+                <b class="additional__description-price">100 ₽</b>
+              </div>
+            </div>
+            <button class="additional__choose product__choose" type="button">заказать</button>
+          </li>
+          <li class="additional__item">
+            <div class="additional__item-block">
+              <h3 class="additional__title-product">витамины</h3>
+              <div class="additional__wrapper">
+                <span class="additional__description">1 упаковка (30 г)</span>
+                <b class="additional__description-price">300 ₽</b>
+              </div>
+            </div>
+            <button class="additional__choose product__choose" type="button">заказать</button>
+          </li>
+        </ul>
+        <section class="information">
+          <div class="information__wrapper">
+            <h2 class="visually-hidden">Информация покупателям</h2>
+            <p class="information__description present">Закажите все и получите чехол для кота в подарок!</p>
           </div>
-          <button class="additional__choose product__choose" type="button">заказать</button>
-        </li>
-        <li class="additional__item">
-          <h3 class="additional__title-product">Питьевая вода</h3>
-          <div class="additional__wrapper">
-            <span class="additional__description">5 литров</span>
-            <b class="additional__description-price">50 ₽</b>
-          </div>
-          <button class="additional__choose product__choose" type="button">заказать</button>
-        </li>
-        <li class="additional__item">
-          <h3 class="additional__title-product">молоко</h3>
-          <div class="additional__wrapper">
-            <span class="additional__description">1 литр</span>
-            <b class="additional__description-price">100 ₽</b>
-          </div>
-          <button class="additional__choose product__choose" type="button">заказать</button>
-        </li>
-        <li class="additional__item">
-          <h3 class="additional__title-product">витамины</h3>
-          <div class="additional__wrapper">
-            <span class="additional__description">1 упаковка (30 г)</span>
-            <b class="additional__description-price">300 ₽</b>
-          </div>
-          <button class="additional__choose product__choose" type="button">заказать</button>
-        </li>
-      </ul>
+        </section>
+      </div>
     </div>
   </section>
-  <section class="information">
-    <div class="information__wrapper">
-      <h2 class="visually-hidden">Информация покупателям</h2>
-      <p class="information__description present">Закажите все и получите чехол для кота в подарок!</p>
-    </div>
-  </section>
-  <section class="company-address company-address__catalog">
-    <div class="company-address__wrapper">
-      <h2 class="company-address__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="company-address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-    </div>
-    <div class="company-address__maps">
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e13661316e90b1716b245ff04f35bf65a6afae241b2916416bb271dade71678&amp;source=constructor"
-        width="320" height="362" frameborder="0"></iframe>
+  <section class="company-address">
+    <div class="company-address__position">
+      <div class="company-address__wrapper company-address__catalog">
+        <h2 class="company-address__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="company-address__description">ул. Большая Конюшенная, д. 19/8 <span class="company-address__city">Санкт-Петербург</span>
+        </p>
+      </div>
+      <div class="company-address__maps">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e13661316e90b1716b245ff04f35bf65a6afae241b2916416bb271dade71678&amp;source=constructor"
+          width="100%" height="100%" frameborder="0"></iframe>
+      </div>
     </div>
   </section>
 </main>

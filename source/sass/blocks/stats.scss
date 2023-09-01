@@ -1,8 +1,30 @@
+@import "../general";
+
 .stats {
-  background-image: linear-gradient(#68B738D9 100%, transparent 85%),
-  url("../../images/cat-background-desktop.png");
-  background-repeat: no-repeat;
-  background-size: 320px 302px;
+  margin: 0 auto;
+  @media (max-width: $mobile-width-only) {
+    background-image: linear-gradient(#68b738d9 100%, transparent 85%),
+    url("../../images/cat-background-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 320px 302px;
+    width: 320px;
+  }
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.stats__position {
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 526px 120px;
+    position: relative;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 110px 0 290px 190px;
+  }
 }
 
 .stats__main-title {
@@ -14,6 +36,29 @@
   line-height: 36px;
   margin: 0;
   padding-top: 27px;
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 0;
+    text-align: left;
+  }
+}
+
+.stats__main-title::after {
+  @media (min-width: $desktop-width) {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(#68b738d9 100%, transparent 85%),
+    url("../../images/cat-desktop-index.png");
+    background-repeat: no-repeat;
+    background-size: 720px 694px;
+    width: 720px;
+    height: 694px;
+    top: -100px;
+    left: 750px;
+    z-index: -1;
+  }
 }
 
 .stats__title {
@@ -26,12 +71,34 @@
   text-align: center;
   margin: 0;
   padding-top: 25px;
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 40px;
+    text-align: left;
+  }
 }
 
 .stats__product-presentation {
   padding-top: 29px;
   display: block;
   margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    padding-top: 21px;
+    width: 400px;
+    height: 350px;
+    z-index: -1;
+    left: 230px;
+    top: 220px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    left: 610px;
+    top: 20px;
+  }
 }
 
 .stats__choose-program {
@@ -49,4 +116,14 @@
   width: 88%;
   cursor: pointer;
   margin-left: 20px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 260px;
+    padding: 14px 26px;
+    margin: 50px 0 0 0;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 52px;
+  }
 }
