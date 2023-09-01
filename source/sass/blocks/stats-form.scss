@@ -1,11 +1,15 @@
 @import "../general";
 
 .stats-form {
+  margin: 0 auto;
   padding: 0 20px;
+  width: 280px;
   @media (min-width: $tablet-width) {
+    width: 628px;
     padding: 0 70px;
   }
   @media (min-width: $desktop-width) {
+    width: 1220px;
     padding: 0 110px 0 110px;
   }
 }

@@ -1,12 +1,23 @@
 @import "../general";
 
 .stats {
+  margin: 0 auto;
   @media (max-width: $mobile-width-only) {
     background-image: linear-gradient(#68b738d9 100%, transparent 85%),
     url("../../images/cat-background-desktop.png");
     background-repeat: no-repeat;
     background-size: 320px 302px;
+    width: 320px;
   }
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.stats__position {
   @media (min-width: $tablet-width) {
     padding: 0 30px 526px 120px;
     position: relative;
@@ -35,17 +46,19 @@
 }
 
 .stats__main-title::after {
-  content: '';
-  position: absolute;
-  background-image: linear-gradient(#68b738d9 100%, transparent 85%),
-  url("../../images/cat-desktop-index.png");
-  background-repeat: no-repeat;
-  background-size: 720px 694px;
-  width: 720px;
-  height: 694px;
-  top: -100px;
-  left: 750px;
-  z-index: -1;
+  @media (min-width: $desktop-width) {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(#68b738d9 100%, transparent 85%),
+    url("../../images/cat-desktop-index.png");
+    background-repeat: no-repeat;
+    background-size: 720px 694px;
+    width: 720px;
+    height: 694px;
+    top: -100px;
+    left: 750px;
+    z-index: -1;
+  }
 }
 
 .stats__title {

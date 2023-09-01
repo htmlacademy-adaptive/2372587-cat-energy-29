@@ -1,13 +1,12 @@
 @import "../general";
 
 .company-address {
+  width: 100%;
   @media (min-width: $desktop-width) {
     position: relative;
   }
 }
-
-.company-address__catalog,
-.company-address__form {
+.company-address__position {
   background-color: #f2f2f2;
 }
 
@@ -24,11 +23,15 @@
 }
 
 .company-address__wrapper {
+  margin: 0 auto;
+  width: 320px;
   padding: 26px 20px 26px 20px;
   display: flex;
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
     justify-content: space-between;
+    width: 628px;
+    gap: 308px;
   }
   @media (min-width: $desktop-width) {
     max-width: 565px;
@@ -49,6 +52,7 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  max-width: 140px;
   margin: 0;
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -64,6 +68,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  max-width: 140px;
   margin: 0;
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -83,14 +88,14 @@
 }
 
 .company-address__maps {
-  width: 320px;
+  width: 100%;
   height: 362px;
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 100%;
     height: 400px;
   }
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    width: 100%;
     height: 400px;
   }
 }
