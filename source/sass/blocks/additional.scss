@@ -3,25 +3,22 @@
 .additional {
   margin: 0 auto;
   padding: 0 20px 0 20px;
-  width: 280px;
   @media (min-width: $tablet-width) {
-    width: 708px;
     padding: 0 30px 0 30px;
   }
   @media (min-width: $desktop-width) {
-    width: 1220px;
     padding: 0 110px 87px 110px;
   }
 }
 
 .additional__products {
-  padding: 25px 0 19px 0;
+  padding-bottom: 19px;
   margin: 0;
   @media (min-width: $tablet-width) {
     padding: 70px 0 0 0;
   }
   @media (min-width: $desktop-width) {
-    padding-top: 76px;
+    padding-top: 6px;
   }
 }
 
@@ -33,41 +30,40 @@
   font-weight: 400;
   line-height: 24px;
   margin: 0;
+  padding-top: 24px;
   padding-bottom: 36px;
   position: relative;
+  max-width: 240px;
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     padding-left: 40px;
+    max-width: max-content;
   }
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding-top: 70px;
   }
 }
 
-.additional__title::after {
-  @media (max-width: $mobile-width-only) {
-    content: "";
-    height: 1px;
-    width: 280px;
-    position: absolute;
-    background-color: #cdcdcd;
-    top: 60px;
-    left: 0;
-  }
-}
+
 .additional__container-desktop {
+  width: 280px;
+  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: 628px;
+  }
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     width: 1220px;
-
   }
 }
+
 .additional__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  border-top: 1px solid #cdcdcd;
   @media (min-width: $tablet-width) {
     padding: 0 38px;
     margin-top: 80px;
@@ -101,11 +97,13 @@
     border-top: 1px solid #cdcdcd;
   }
 }
+
 .additional__item:last-child {
   @media (min-width: $desktop-width) {
     border-bottom: 1px solid #cdcdcd;
   }
-  }
+}
+
 .additional__item-block {
   @media (min-width: $tablet-width) {
     display: flex;
