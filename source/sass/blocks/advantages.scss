@@ -74,7 +74,7 @@
   @media (max-width: $mobile-width-only) {
     content: '';
     position: absolute;
-    background-image: url("../../images/cat-sitting.png");
+    background-image: url("../../images/cat-sitting.svg");
     background-repeat: no-repeat;
     height: 53px;
     width: 50px;
@@ -113,10 +113,10 @@
   @media (max-width: $mobile-width-only) {
     content: '';
     position: absolute;
-    background-image: url("../../images/cat-go.png");
+    background-image: url("../../images/cat-back.svg");
     background-repeat: no-repeat;
     height: 53px;
-    width: 50px;
+    width: 67px;
     padding-right: 20px;
     left: 20px;
     top: 40px;
@@ -174,7 +174,7 @@
   @media (max-width: $mobile-width-only) {
     content: "";
     height: 1px;
-    width: 240px;
+    width: 280px;
     position: absolute;
     background-color: #d9d9d9;
     left: 0;
