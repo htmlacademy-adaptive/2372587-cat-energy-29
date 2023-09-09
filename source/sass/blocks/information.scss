@@ -18,17 +18,32 @@
   url("../../images/catalog/cat-in-bag.png");
   background-repeat: no-repeat;
   background-size: 280px 290px;
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(#68b738d9 100%, transparent 85%),
+    url("../../images/catalog/cat-in-bag@2x.png");
+    background-size: 280px 290px;
+  }
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(#68b738d9 100%, transparent 85%),
     url("../../images/catalog/cat-in-bag-desctop.png");
     background-repeat: no-repeat;
     background-size: 707px 200px;
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(#68b738d9 100%, transparent 85%),
+      url("../../images/catalog/cat-in-bag-desctop@2x.png");
+      background-size: 707px 200px;
+    }
   }
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(#68b738d9 100%, transparent 85%),
     url("../../images/catalog/cat-in-bag.png");
     background-repeat: no-repeat;
     background-size: 245px 288px;
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(#68b738d9 100%, transparent 85%),
+      url("../../images/catalog/cat-in-bag.png");
+      background-size: 245px 288px;
+    }
   }
 }
 

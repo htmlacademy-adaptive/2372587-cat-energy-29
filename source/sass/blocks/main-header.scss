@@ -17,7 +17,7 @@
   @media (min-width: $desktop-width) {
     min-width: 1440px;
     display: flex;
-    padding: 71px 110px 42px 110px;
+    padding: 55px 110px 42px 110px;
   }
 }
 
@@ -42,12 +42,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   @media (min-width: $tablet-width) {
-    left: 140px;
-    top: 40%;
+    left: 180px;
+    top: 63px;
   }
   @media (min-width: $desktop-width) {
-    left: 220px;
-    top: 60%;
+    left: 250px;
+    top: 55%;
   }
 }
 
