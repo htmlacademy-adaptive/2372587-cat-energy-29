@@ -6,6 +6,7 @@
     position: relative;
   }
 }
+
 .company-address__position {
   background-color: #f2f2f2;
 }
@@ -24,7 +25,7 @@
 
 .company-address__wrapper {
   margin: 0 auto;
-  width: 320px;
+  width: 280px;
   padding: 26px 20px 26px 20px;
   display: flex;
   @media (min-width: $tablet-width) {
@@ -34,14 +35,14 @@
     gap: 308px;
   }
   @media (min-width: $desktop-width) {
-    max-width: 565px;
+    max-width: 410px;
     position: absolute;
     z-index: 4;
     background-color: #ffffff;
-    padding: 61px 78px 60px 80px;
+    padding: 61px 78px 50px 80px;
     gap: 87px;
-    top: 75px;
-    left: 95px;
+    top: 90px;
+    left: 248px;
   }
 }
 
@@ -58,7 +59,7 @@
     font-size: 20px;
     line-height: 26px;
     max-width: 163px;
-
+    padding-top: 3px;
   }
 }
 
@@ -78,6 +79,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 

@@ -13,7 +13,7 @@
   height: 15px;
   width: calc(50% - 160px);
   border-bottom: 2px solid #68b738;
-  padding-top: 24px;
+  padding-top: 15px;
 }
 
 .style-title::after {
@@ -22,8 +22,7 @@
   width: 10px;
   border-bottom: 2px solid #68b738;
   flex-grow: 1;
-  padding-top: 24px;
-
+  padding-top: 15px;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,11 +45,11 @@
 
 @media (min-width: $desktop-width) {
   .style-title::before {
-    padding-top: 70px;
+    padding-top: 60px;
     width: calc(50% - 650px);
   }
   .style-title::after {
-    padding-top: 70px;
+    padding-top: 60px;
   }
 }
 

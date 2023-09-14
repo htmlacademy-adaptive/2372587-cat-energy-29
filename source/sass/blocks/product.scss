@@ -1,13 +1,16 @@
 @import "../general";
 
 .product {
-  padding: 20px 0 25px 0;
+  padding: 20px 0 31px 0;
   position: relative;
   @media (min-width: $tablet-width) {
     padding: 0;
     max-width: 324px;
-    min-height: 511px;
-    background: linear-gradient(to bottom, #ffffff 10%, #f2f2f2 10%);
+    height: 511px;
+    background: linear-gradient(to bottom, #ffffff 13%, #f2f2f2 13%);
+  }
+  @media (min-width: $desktop-width) {
+    height: 508px;
   }
 }
 
@@ -30,7 +33,7 @@
     margin-bottom: 17px;
   }
   @media (min-width: $tablet-width) {
-    padding: 0 37px 40px 37px;
+    padding: 0 37px 0 37px;
     min-width: 250px;
     min-height: 389px;
   }
@@ -51,17 +54,22 @@
 
 .small-pack {
   @media (min-width: $tablet-width) {
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 13px;
   }
 }
 
 .product__wrapper {
   @media (min-width: $tablet-width) {
-    padding-top: 22px;
+    padding-top: 24px;
   }
   @media (min-width: $desktop-width) {
     max-width: 169px;
-    padding-left: 38px;
+    padding-top: 20px;
+    padding-left: 44px;
   }
 }
 
@@ -86,8 +94,8 @@
 .product__table-list {
   margin: 0;
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
-    padding-bottom: 32px;
+    padding-top: 22px;
+    padding-bottom: 42px;
   }
 }
 
@@ -95,7 +103,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 7px;
   }
 }
 
@@ -160,13 +168,21 @@
   }
   @media (min-width: $desktop-width) {
     width: 169px;
+  }
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
 .all-product {
   @media (max-width: $mobile-width-only) {
-    padding: 25px 0 25px 0;
+    padding: 10px 0 25px 0;
     position: relative;
   }
 }
@@ -191,14 +207,15 @@
     position: absolute;
     background-color: #ebebeb;
     left: -20px;
-    bottom: 0;
+    bottom: -25px;
   }
 }
 
 .all-product__list {
+  position: relative;
   @media (min-width: $tablet-width) {
     min-width: 320px;
-    min-height: 429px;
+    height: 443px;
     border: 1px solid #f2f2f2;
   }
   @media (min-width: $desktop-width) {
@@ -209,16 +226,54 @@
 
 .all-product__wrapper {
   @media (min-width: $tablet-width) {
-    padding: 110px 20px 82px 20px;
+    padding: 39px 36px 85px 36px;
   }
   @media (min-width: $desktop-width) {
-    padding: 70px 20px 90px 20px;
+    padding: 40px 20px 70px 28px;
   }
 }
 
 .all-product__more-products {
   display: block;
-  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  margin: 6px auto 23px auto;
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin: 11px auto 49px auto;
+  }
+}
+
+.all-product__more-products:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  top: 15px;
+  left: 0;
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    top: 30px;
+  }
+}
+
+.all-product__more-products:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  top: 15px;
+  left: 0;
+  transform: rotate(90deg);
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    top: 30px;
+  }
 }
 
 .all-product__title {
@@ -230,11 +285,9 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 23px;
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    padding-top: 50px;
     max-width: 134px;
     margin: 0 auto;
   }
@@ -249,7 +302,7 @@
   line-height: 16px;
   margin: 0;
   padding-top: 8px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
@@ -269,5 +322,14 @@
 .all-product__choose {
   color: #444444;
   background-color: #f2f2f2;
-  margin-bottom: 50px;
+
+  &:hover {
+    color: #444444;
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: #444444;
+    background-color: #ebebeb;
+  }
 }

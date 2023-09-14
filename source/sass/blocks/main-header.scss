@@ -12,7 +12,7 @@
   @media (min-width: $tablet-width) {
     min-width: 768px;
     display: flex;
-    padding: 39px 34px 77px 30px;
+    padding: 39px 34px 55px 30px;
   }
   @media (min-width: $desktop-width) {
     min-width: 1440px;
@@ -34,6 +34,14 @@
     display: block;
     max-width: 210px;
   }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .main-header__logo-image {
@@ -42,12 +50,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   @media (min-width: $tablet-width) {
-    left: 180px;
-    top: 63px;
+    left: 153px;
+    top: 60px;
   }
   @media (min-width: $desktop-width) {
-    left: 250px;
-    top: 55%;
+    left: 255px;
+    top: 50%;
   }
 }
 
@@ -188,11 +196,27 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
   }
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .site-list__general a {
   @media (min-width: $desktop-width) {
     color: #ffffff;
+  }
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
   }
 }
 
@@ -201,4 +225,3 @@
     border-bottom: 2px solid #ffffff;
   }
 }
-
