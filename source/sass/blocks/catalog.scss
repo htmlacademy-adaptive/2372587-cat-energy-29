@@ -30,7 +30,7 @@
     padding: 0;
   }
   @media (min-width: $desktop-width) {
-    padding-top: 32px;
+    padding-top: 25px;
   }
 }
 
@@ -51,14 +51,15 @@
   list-style-type: none;
   padding: 41px 0 0 0;
   @media (min-width: $tablet-width) {
-    padding-top: 84px;
+    padding-top: 95px;
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
     align-items: flex-end;
   }
   @media (min-width: $desktop-width) {
+    padding-top: 90px;
     width: 1220px;
-    gap: 73px;
+    gap: 73.3px;
   }
 }

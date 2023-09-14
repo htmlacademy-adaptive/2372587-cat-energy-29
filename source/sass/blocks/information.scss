@@ -4,12 +4,13 @@
   padding: 35px 0;
   position: relative;
   @media (min-width: $tablet-width) {
-    max-width: 707px;
+    width: 707px;
     padding: 70px 0 75px 0;
   }
   @media (min-width: $desktop-width) {
     width: 245px;
-    padding: 80px 0 0 0;
+    padding: 0;
+    margin-top: -20px;
   }
 }
 
@@ -64,6 +65,7 @@
     text-align: left;
   }
   @media (min-width: $desktop-width) {
+    text-align: center;
     width: 161px;
     padding: 185px 42px 43px 42px;
   }
@@ -83,10 +85,10 @@
     width: 80px;
     height: 83px;
     top: 130px;
-    left: 110px;
+    left: 80px;
   }
   @media (min-width: $desktop-width) {
-    top: 140px;
+    top: 55px;
     left: 85px;
   }
 }
