@@ -83,7 +83,7 @@
   @media (max-width: $mobile-width-only) {
     content: '';
     position: absolute;
-    background-image: url("../../images/cat-sitting.svg");
+    background-image: url("../../images/cat-sitting.png");
     background-repeat: no-repeat;
     height: 53px;
     width: 50px;
@@ -122,7 +122,7 @@
   @media (max-width: $mobile-width-only) {
     content: '';
     position: absolute;
-    background-image: url("../../images/cat-go-mobile.svg");
+    background-image: url("../../images/cat-go-mobile.png");
     background-repeat: no-repeat;
     height: 53px;
     width: 67px;
@@ -208,7 +208,7 @@
   text-align: start;
 
   &:hover::after {
-    background-image: url("../../images/catalog/arrow-long.svg");
+    background-image: url("../../images/catalog/arrow-long.png");
   }
 
   @media (min-width: $tablet-width) {
@@ -228,7 +228,7 @@
 .advantages__catalog::after {
   content: '';
   position: absolute;
-  background-image: url("../../images/catalog/arrow-small.svg");
+  background-image: url("../../images/catalog/arrow-small.png");
   background-size: 32px 10px;
   width: 32px;
   height: 10px;

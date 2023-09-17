@@ -100,12 +100,12 @@
 
 .example__item {
   @media (max-width: $mobile-width-only) {
-    background-image: url("../../images/frame-mobile.svg");
+    background-image: url("../../images/frame-mobile.png");
     background-repeat: no-repeat;
     width: 124px;
   }
   @media (min-width: $tablet-width) {
-    background-image: url("../../images/frame.svg");
+    background-image: url("../../images/frame.png");
     background-repeat: no-repeat;
     min-width: 165px;
   }
@@ -145,6 +145,10 @@
     padding-top: 11px;
     padding-left: 18px;
     margin: 0;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 140px;
+    padding-left: 10px;
   }
 }
 

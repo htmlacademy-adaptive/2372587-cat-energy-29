@@ -96,7 +96,9 @@
 
 .social__item:first-child {
   margin: 0;
-  padding-left: 43px;
+  @media (min-width: $tablet-width) {
+    padding-left: 43px;
+  }
 }
 
 .social_icons {
@@ -156,4 +158,3 @@
 .copyright__image:hover {
   fill: #68b738;
 }
-
