@@ -2,6 +2,7 @@
 
 .company-address {
   width: 100%;
+
   @media (min-width: $desktop-width) {
     position: relative;
   }
@@ -12,6 +13,7 @@
 }
 
 .company-address__catalog {
+
   @media (min-width: $desktop-width) {
     max-width: 565px;
     z-index: 4;
@@ -28,12 +30,14 @@
   width: 280px;
   padding: 26px 20px 26px 20px;
   display: flex;
+
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
     justify-content: space-between;
     width: 628px;
     gap: 308px;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 410px;
     position: absolute;
@@ -55,6 +59,7 @@
   text-transform: uppercase;
   max-width: 140px;
   margin: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
@@ -71,6 +76,7 @@
   line-height: 20px;
   max-width: 140px;
   margin: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
@@ -80,12 +86,14 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
   @media (min-width: $desktop-width) {
     text-align: start;
   }
 }
 
 .company-address__city {
+
   @media (min-width: $tablet-width) {
     margin-top: 10px;
   }
@@ -97,29 +105,34 @@
   overflow: hidden;
   width: 100%;
   height: 362px;
+
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/maps/location-mobile2x.png");
     width: 100%;
     height: 362px;
   }
+
   @media (min-width: $tablet-width) {
     background-image: url("../../images/maps/location-tablet.png");
     background-repeat: no-repeat;
     overflow: hidden;
     width: 100%;
     height: 400px;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/maps/location-tablet2x.png");
       width: 100%;
       height: 400px;
     }
   }
+
   @media (min-width: $desktop-width) {
     background-image: url("../../images/maps/location-desktop.png");
     background-repeat: no-repeat;
     overflow: hidden;
     width: 100%;
     height: 400px;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/maps/location-desktop2x.png");
       width: 100%;

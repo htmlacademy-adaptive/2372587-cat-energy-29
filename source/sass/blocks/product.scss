@@ -3,18 +3,21 @@
 .product {
   padding: 20px 0 31px 0;
   position: relative;
+
   @media (min-width: $tablet-width) {
     padding: 0;
     max-width: 324px;
     height: 511px;
     background: linear-gradient(to bottom, #ffffff 13%, #f2f2f2 13%);
   }
+
   @media (min-width: $desktop-width) {
     height: 508px;
   }
 }
 
 .product::before {
+
   @media (max-width: $mobile-width-only) {
     content: "";
     height: 1px;
@@ -27,16 +30,19 @@
 }
 
 .product__list {
+
   @media (max-width: $mobile-width-only) {
     display: grid;
     grid-template-columns: 140px 140px;
     margin-bottom: 17px;
   }
+
   @media (min-width: $tablet-width) {
     padding: 0 37px 0 37px;
     min-width: 250px;
     min-height: 389px;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 245px;
     padding: 0;
@@ -53,19 +59,23 @@
 }
 
 .small-pack {
+
   @media (min-width: $tablet-width) {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 13px;
   }
 }
 
 .product__wrapper {
+
   @media (min-width: $tablet-width) {
     padding-top: 24px;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 169px;
     padding-top: 20px;
@@ -82,6 +92,7 @@
   text-transform: uppercase;
   margin: 0 0 14px 0;
   max-width: 80px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
@@ -93,6 +104,7 @@
 
 .product__table-list {
   margin: 0;
+
   @media (min-width: $tablet-width) {
     padding-top: 22px;
     padding-bottom: 42px;
@@ -100,6 +112,7 @@
 }
 
 .product__table-item {
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -111,6 +124,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 3px;
     border-bottom: 1px solid #cdcdcd;
@@ -125,6 +139,7 @@
   line-height: 16px;
   color: #444444;
   margin: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
@@ -140,6 +155,7 @@
   line-height: 16px;
   color: #444444;
   margin: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
@@ -160,12 +176,14 @@
   padding: 10px 0;
   width: 100%;
   cursor: pointer;
+
   @media (min-width: $tablet-width) {
     width: 250px;
     align-self: end;
     margin-bottom: 40px;
     margin-left: 37px;
   }
+
   @media (min-width: $desktop-width) {
     width: 169px;
   }
@@ -181,6 +199,7 @@
 }
 
 .all-product {
+
   @media (max-width: $mobile-width-only) {
     padding: 10px 0 25px 0;
     position: relative;
@@ -188,6 +207,7 @@
 }
 
 .all-product::before {
+
   @media (max-width: $mobile-width-only) {
     content: "";
     height: 1px;
@@ -200,6 +220,7 @@
 }
 
 .all-product__choose::after {
+
   @media (max-width: $mobile-width-only) {
     content: "";
     height: 1px;
@@ -213,11 +234,13 @@
 
 .all-product__list {
   position: relative;
+
   @media (min-width: $tablet-width) {
     min-width: 320px;
     height: 443px;
     border: 1px solid #f2f2f2;
   }
+
   @media (min-width: $desktop-width) {
     min-width: 245px;
     max-height: 460px;
@@ -225,9 +248,11 @@
 }
 
 .all-product__wrapper {
+
   @media (min-width: $tablet-width) {
     padding: 39px 36px 85px 36px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 40px 20px 70px 28px;
   }
@@ -240,6 +265,7 @@
   cursor: pointer;
   position: relative;
   margin: 6px auto 23px auto;
+
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
@@ -255,6 +281,7 @@
   background-color: #d3d3d3;
   top: 15px;
   left: 0;
+
   @media (min-width: $tablet-width) {
     width: 60px;
     top: 30px;
@@ -270,6 +297,7 @@
   top: 15px;
   left: 0;
   transform: rotate(90deg);
+
   @media (min-width: $tablet-width) {
     width: 60px;
     top: 30px;
@@ -285,6 +313,7 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
@@ -303,6 +332,7 @@
   margin: 0;
   padding-top: 8px;
   padding-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
@@ -313,6 +343,7 @@
 }
 
 .all-product__page {
+
   @media (min-width: $desktop-width) {
     display: block;
     padding-bottom: 40px;

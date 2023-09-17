@@ -3,9 +3,11 @@
 .order-form {
   margin: 0 auto;
   padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     padding: 0 70px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 0 110px 0 110px;
   }
@@ -14,9 +16,11 @@
 .form__section-personal {
   width: 280px;
   margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     width: 628px;
   }
+
   @media (min-width: $desktop-width) {
     display: flex;
     width: 1220px;
@@ -31,9 +35,11 @@
   padding: 0 0 24px 0;
   position: relative;
   border: none;
+
   @media (min-width: $tablet-width) {
     padding: 25px 0 0 0;
   }
+
   @media (min-width: $desktop-width) {
     width: 570px;
     padding: 0;
@@ -53,6 +59,7 @@
   height: 45px;
   vertical-align: middle;
   align-items: center;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     margin-bottom: 20px;
@@ -89,9 +96,11 @@
 .form__properties {
   padding: 12px 0 27px 0;
   border: none;
+
   @media (min-width: $tablet-width) {
     padding: 53px 0 40px 0;
   }
+
   @media (min-width: $desktop-width) {
     padding: 0;
   }
@@ -104,11 +113,13 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+
   @media (min-width: $tablet-width) {
     border: 1px solid #e7e7e7;
     padding: 28px 27px 32px 27px;
     gap: 23px;
   }
+
   @media (min-width: $desktop-width) {
     width: 516px;
   }
@@ -137,6 +148,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
@@ -151,6 +163,7 @@
   border-radius: 50%;
   background-color: #68b738;
   margin: auto;
+
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
@@ -165,6 +178,7 @@
   text-transform: uppercase;
   color: #444444;
   margin-left: 45px;
+
   @media (min-width: $tablet-width) {
     margin-left: 60px;
     font-size: 20px;
@@ -189,11 +203,13 @@
   margin: 0;
   padding-top: 24px;
   padding-bottom: 35px;
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     padding-bottom: 20px;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 50px;
   }
@@ -202,10 +218,12 @@
 .form__container-contact {
   width: 280px;
   margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     width: 628px;
     padding-bottom: 25px;
   }
+
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 80px;
@@ -228,10 +246,12 @@
   height: 45px;
   vertical-align: middle;
   align-items: center;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 25px;
     font-size: 20px;
   }
+
   @media (min-width: $desktop-width) {
     width: 570px;
     padding-bottom: 0;
@@ -253,6 +273,7 @@
   color: #444444;
   padding: 14px 15px 13px 15px;
   border: 1px solid #cdcdcd;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
@@ -273,9 +294,11 @@
 .form__icon {
   position: absolute;
   left: 250px;
+
   @media (min-width: $tablet-width) {
     left: 590px;
   }
+
   @media (min-width: $desktop-width) {
     left: 530px;
   }
@@ -305,12 +328,14 @@
   margin: 0;
   padding-top: 15px;
   padding-bottom: 38px;
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     padding-top: 24px;
     padding-bottom: 25px;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 60px;
   }
@@ -319,10 +344,12 @@
 .form__comment-position {
   width: 280px;
   margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     width: 628px;
     padding-bottom: 41px;
   }
+
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding-bottom: 0;
@@ -342,12 +369,14 @@
   resize: none;
   width: 280px;
   min-height: 150px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     width: 628px;
     min-height: 175px;
   }
+
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 5px 14px 13px 20px;
@@ -380,12 +409,14 @@
   margin: 0;
   padding-top: 15px;
   padding-bottom: 36px;
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     padding-top: 24px;
     padding-bottom: 0;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 60px;
   }
@@ -396,6 +427,7 @@
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 284px);
@@ -403,6 +435,7 @@
     column-gap: 60px;
     width: 620px;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
@@ -413,6 +446,7 @@
 .form__additional-item {
   margin-bottom: 13px;
   height: 30px;
+
   @media (min-width: $tablet-width) {
     margin: 0;
     height: 40px;
@@ -423,6 +457,7 @@
   display: block;
   position: relative;
   height: 30px;
+
   @media (min-width: $tablet-width) {
     height: 40px;
   }
@@ -441,6 +476,7 @@
   height: 2px;
   background-color: #68b738;
   transform: rotate(135deg);
+
   @media (min-width: $tablet-width) {
     top: 17px;
     left: 14px;
@@ -458,6 +494,7 @@
   height: 2px;
   background-color: #68b738;
   transform: rotate(45deg);
+
   @media (min-width: $tablet-width) {
     top: 20px;
     left: 8px;
@@ -473,6 +510,7 @@
   border: 1px solid #cdcdcd;
   box-sizing: border-box;
   margin: 0;
+
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
@@ -490,6 +528,7 @@
   align-items: center;
   margin-left: 45px;
   padding-top: 5px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     height: 40px;
@@ -502,6 +541,7 @@
   width: 280px;
   margin: 0 auto;
   padding-top: 15px;
+
   @media (min-width: $tablet-width) {
     width: 628px;
     padding-top: 52px;
@@ -509,6 +549,7 @@
     display: flex;
     gap: 60px;
   }
+
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding-top: 65px;
@@ -529,6 +570,7 @@
   padding: 10px 0;
   width: 100%;
   cursor: pointer;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
@@ -536,6 +578,7 @@
     width: 284px;
     max-height: 54px;
   }
+
   @media (min-width: $desktop-width) {
     width: 570px;
   }
@@ -560,6 +603,7 @@
   line-height: 16px;
   margin: 0;
   padding: 21px 0 32px 0;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
