@@ -92,14 +92,38 @@
 }
 
 .company-address__maps {
+  background-image: url("../../images/maps/location-mobile.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
   width: 100%;
   height: 362px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/maps/location-mobile2x.png");
+    width: 100%;
+    height: 362px;
+  }
   @media (min-width: $tablet-width) {
+    background-image: url("../../images/maps/location-tablet.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
     width: 100%;
     height: 400px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/maps/location-tablet2x.png");
+      width: 100%;
+      height: 400px;
+    }
   }
   @media (min-width: $desktop-width) {
+    background-image: url("../../images/maps/location-desktop.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
     width: 100%;
     height: 400px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/maps/location-desktop2x.png");
+      width: 100%;
+      height: 400px;
+    }
   }
 }

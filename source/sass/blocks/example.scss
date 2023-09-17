@@ -146,6 +146,10 @@
     padding-left: 18px;
     margin: 0;
   }
+  @media (min-width: $desktop-width) {
+    max-width: 140px;
+    padding-left: 10px;
+  }
 }
 
 .example__title {
