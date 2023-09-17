@@ -5,6 +5,7 @@
   justify-content: center;
   position: relative;
   z-index: 3;
+
   @media (min-width: $tablet-width) {
     background-color: transparent;
   }
@@ -17,6 +18,7 @@
   height: 256px;
   width: 280px;
   margin: 20px 0 40px 0;
+
   @media (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
@@ -33,6 +35,7 @@
 
 .slider__item:last-child {
   height: 256px;
+
   @media (min-width: $tablet-width) {
     height: 512px;
   }
@@ -44,6 +47,7 @@
   height: 256px;
   margin-right: auto;
   overflow: hidden;
+
   @media (min-width: $tablet-width) {
     width: 280px;
     height: 512px;
@@ -63,6 +67,7 @@
   position: relative;
   margin-left: auto;
   overflow: hidden;
+
   @media (min-width: $tablet-width) {
     width: 280px;
     height: 512px;
@@ -83,9 +88,11 @@
   cursor: pointer;
   top: 125px;
   z-index: 4;
+
   @media (min-width: $tablet-width) {
     top: 350px;
   }
+
   @media (min-width: $desktop-width) {
     top: 235px;
   }
@@ -109,10 +116,12 @@
   top: -105px;
   left: 25px;
   z-index: -1;
+
   @media (min-width: $tablet-width) {
     height: 512px;
     top: -250px;
   }
+
   @media (min-width: $desktop-width) {
     top: -230px;
   }

@@ -4,10 +4,12 @@
   margin: 0 auto;
   padding: 0 20px;
   width: 280px;
+
   @media (min-width: $tablet-width) {
     width: 628px;
     padding: 0 70px;
   }
+
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 110px 0 110px;
@@ -23,11 +25,13 @@
   line-height: 36px;
   margin: 0;
   padding-top: 27px;
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     padding: 0;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 22px;
   }
@@ -45,12 +49,14 @@
   margin: 0;
   padding-top: 37px;
   padding-bottom: 39px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     max-width: 323px;
     padding-top: 54px;
   }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
   }

@@ -4,10 +4,12 @@
   margin: 0 auto;
   width: 280px;
   padding: 0 20px 0 20px;
+
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 0;
   }
+
   @media (min-width: $desktop-width) {
     min-width: 1440px;
     padding: 0;
@@ -15,9 +17,11 @@
 }
 
 .advantages__wrapper {
+
   @media (min-width: $tablet-width) {
     padding: 0 30px 0 30px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 0 110px 0 110px;
   }
@@ -27,6 +31,7 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 80px;
@@ -39,10 +44,12 @@
   padding: 20px;
   margin-top: 20px;
   position: relative;
+
   @media (min-width: $tablet-width) {
     max-width: 708px;
     padding: 77px 0 57px 53px;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 570px;
     padding: 77px 61px 59px 52px;
@@ -51,9 +58,11 @@
 }
 
 .advantages__item:last-child {
+
   @media (min-width: $tablet-width) {
     margin-top: 35px;
   }
+
   @media (min-width: $desktop-width) {
     margin: 0;
   }
@@ -69,17 +78,20 @@
   margin: 0;
   padding-top: 10px;
   padding-left: 70px;
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     padding: 0;
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 162px;
   }
 }
 
 .advantages__title--slim::before {
+
   @media (max-width: $mobile-width-only) {
     content: '';
     position: absolute;
@@ -94,6 +106,7 @@
 }
 
 .advantages__title--slim::after {
+
   @media (min-width: $tablet-width) {
     content: '';
     position: absolute;
@@ -105,6 +118,7 @@
     left: 450px;
     top: 80px;
   }
+
   @media (min-width: $desktop-width) {
     content: '';
     position: absolute;
@@ -119,6 +133,7 @@
 }
 
 .advantages__title--pro::before {
+
   @media (max-width: $mobile-width-only) {
     content: '';
     position: absolute;
@@ -133,6 +148,7 @@
 }
 
 .advantages__title--pro::after {
+
   @media (min-width: $tablet-width) {
     content: '';
     position: absolute;
@@ -144,6 +160,7 @@
     left: 410px;
     top: 95px;
   }
+
   @media (min-width: $desktop-width) {
     content: '';
     position: absolute;
@@ -167,6 +184,7 @@
   margin: 0;
   padding-top: 29px;
   position: relative;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
@@ -174,6 +192,7 @@
     padding-top: 24px;
     padding-bottom: 60px;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 73px;
     max-width: 457px;
@@ -182,6 +201,7 @@
 }
 
 .advantages__description::after {
+
   @media (max-width: $mobile-width-only) {
     content: "";
     height: 1px;
@@ -215,6 +235,7 @@
     font-size: 20px;
     padding: 0;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 35px;
     padding-left: 4px;
@@ -234,10 +255,12 @@
   height: 10px;
   top: 45px;
   left: 100px;
+
   @media (min-width: $tablet-width) {
     top: 3px;
     left: 135px;
   }
+
   @media (min-width: $desktop-width) {
     top: 38px;
     left: 133px;

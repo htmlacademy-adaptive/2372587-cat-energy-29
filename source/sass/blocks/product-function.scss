@@ -4,10 +4,12 @@
   margin: 0 auto;
   width: 280px;
   padding: 0 20px 0 20px;
+
   @media (min-width: $tablet-width) {
     min-width: 708px;
     padding: 0 30px 0 30px;
   }
+
   @media (min-width: $desktop-width) {
     min-width: 1220px;
     padding: 0 110px 0 110px;
@@ -28,12 +30,14 @@
   line-height: 40px;
   padding: 25px 0 0 0;
   margin: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     padding-top: 50px;
     margin: 0;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 77px;
   }
@@ -41,11 +45,13 @@
 
 .product-function__list {
   list-style-type: none;
+
   @media (max-width: $mobile-width-only) {
     padding: 43px 0 0 0;
     margin: 0;
     position: relative;
   }
+
   @media (min-width: $tablet-width) {
     padding: 32px 0 47px 0;
     margin: 0;
@@ -53,6 +59,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   @media (min-width: $desktop-width) {
     padding: 32px 0 30px 0;
   }
@@ -61,6 +68,7 @@
 .product-function__item {
   margin-bottom: 26px;
   padding-left: 80px;
+
   @media (min-width: $tablet-width) {
     position: relative;
     min-width: 325px;
@@ -68,17 +76,20 @@
     padding: 0;
     margin-bottom: 37px;
   }
+
   @media (min-width: $desktop-width) {
     min-width: 230px;
   }
 }
 
 .product-function__item--useful {
+
   @media (min-width: $tablet-width) {
     background-image: url("../../images/number-one.png");
     background-repeat: no-repeat;
     background-position: bottom 13px right 127px;
   }
+
   @media (min-width: $desktop-width) {
     background-position: bottom 13px right 45px;
   }
@@ -93,6 +104,7 @@
   width: 60px;
   left: 0;
   top: 40px;
+
   @media (min-width: $tablet-width) {
     background-image: url("../../images/icon-useful-desctop.png");
     top: 41px;
@@ -102,11 +114,13 @@
 }
 
 .product-function__item--water {
+
   @media (min-width: $tablet-width) {
     background-image: url("../../images/number-two.png");
     background-repeat: no-repeat;
     background-position: bottom 13px right 90px;
   }
+
   @media (min-width: $desktop-width) {
     background-position: bottom 13px right 5px;
   }
@@ -121,6 +135,7 @@
   width: 60px;
   left: 0;
   top: 115px;
+
   @media (min-width: $tablet-width) {
     background-image: url("../../images/icon-water-desctop.png");
     top: 41px;
@@ -130,11 +145,13 @@
 }
 
 .product-function__item--eat {
+
   @media (min-width: $tablet-width) {
     background-image: url("../../images/number-three.png");
     background-repeat: no-repeat;
     background-position: bottom 13px right 90px;
   }
+
   @media (min-width: $desktop-width) {
     background-position: bottom 13px right 5px;
   }
@@ -149,6 +166,7 @@
   width: 60px;
   left: 0;
   top: 195px;
+
   @media (min-width: $tablet-width) {
     background-image: url("../../images/icon-eat-desctop.png");
     top: 41px;
@@ -158,11 +176,13 @@
 }
 
 .product-function__item--time {
+
   @media (min-width: $tablet-width) {
     background-image: url("../../images/number-four.png");
     background-repeat: no-repeat;
     background-position: bottom 13px right 80px;
   }
+
   @media (min-width: $desktop-width) {
     background-position: bottom 13px right 1px;
   }
@@ -177,6 +197,7 @@
   width: 60px;
   left: 0;
   top: 275px;
+
   @media (min-width: $tablet-width) {
     background-image: url("../../images/icon-time-desctop.png");
     top: 41px;
@@ -192,6 +213,7 @@
   font-weight: 400;
   line-height: 18px;
   margin: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
