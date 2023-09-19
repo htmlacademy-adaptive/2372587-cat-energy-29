@@ -5,6 +5,7 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
+import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
@@ -21,7 +22,7 @@ export const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename('style.min.css'))
+    .pipe(rename('style.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
@@ -37,8 +38,22 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src('source/js/script.js')
+    .pipe(rename('script.js'))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
+}
+
+const jsMinify = () => {
+  return gulp
+    .src('source/js/script.js')
+    .pipe(
+      terser({
+        keep_fnames: true,
+        mangle: false,
+      })
+    )
+    .pipe(rename('script.js'))
+    .pipe(gulp.dest('build/js'));
 }
 
 // Images
@@ -145,6 +160,7 @@ export const build = gulp.series(
   gulp.parallel(
     styles,
     html,
+    jsMinify,
     scripts,
     svg,
     sprite,

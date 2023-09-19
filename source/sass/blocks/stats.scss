@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     background-size: 320px 302px;
     width: 320px;
+    object-fit: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(#68b738d9 100%, transparent 85%),
@@ -23,6 +24,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+    position: relative;
   }
 }
 
@@ -57,7 +59,7 @@
   }
 }
 
-.stats__main-title::after {
+.stats__position::after {
 
   @media (min-width: $desktop-width) {
     content: '';
@@ -70,7 +72,8 @@
     height: 694px;
     top: -163px;
     left: 722px;
-    z-index: -1;
+    z-index: -2;
+    object-fit: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(#68b738d9 100%, transparent 85%),
@@ -105,6 +108,7 @@
   padding-top: 29px;
   display: block;
   margin: 0 auto;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     position: absolute;
