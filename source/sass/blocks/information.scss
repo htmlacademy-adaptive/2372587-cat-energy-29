@@ -21,6 +21,7 @@
     url("../../images/catalog/cat-in-bag.png");
   background-repeat: no-repeat;
   background-size: 280px 290px;
+  object-fit: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(#68b738d9 100%, transparent 85%),
