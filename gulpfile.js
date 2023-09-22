@@ -109,6 +109,7 @@ const copy = (done) => {
     'source/fonts/oswald/*.{woff2,woff}',
     'source/*.ico',
     'source/*.png',
+    'source/images/logo/*.svg'
   ], {
     base: 'source'
   })

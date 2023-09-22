@@ -146,7 +146,7 @@
 
 .copyright__website {
   color: #444444;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -169,4 +169,11 @@
 
 .copyright__image:hover {
   fill: #68b738;
+}
+
+.copyright__htmlacademy__icon {
+  --svg-color: #666666;
+  &:hover {
+    --svg-color: #68b738;
+  }
 }

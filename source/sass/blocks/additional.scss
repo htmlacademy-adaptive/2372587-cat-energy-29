@@ -6,11 +6,11 @@
   padding: 0 20px 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 0 30px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 87px 110px;
+    padding: 0 0 87px 0;
   }
 }
 
@@ -29,7 +29,7 @@
 .additional__title {
   color: #000000;
   text-align: start;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -133,7 +133,7 @@
 .additional__title-product {
   color: #222222;
   text-align: start;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -182,7 +182,7 @@
 .additional__description {
   color: #444444;
   text-align: start;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -197,7 +197,7 @@
 .additional__description-price {
   color: #444444;
   text-align: end;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;

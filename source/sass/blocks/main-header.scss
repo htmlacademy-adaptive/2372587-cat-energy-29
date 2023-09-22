@@ -74,6 +74,33 @@
   }
 }
 
+.main-header__desktop {
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.main-header__desktop::before {
+
+  @media (min-width: $desktop-width) {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(#68b738d9 100%, transparent 85%),
+    url("../../images/cat-gradient-desktop.png");
+    background-size: cover;
+    width: 50%;
+    left: 50%;
+    height: 694px;
+    z-index: -2;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(#68b738d9 100%, transparent 85%),
+      url("../../images/cat-gradient-desktop@2x.png");
+    }
+  }
+}
+
 .main-nav__toggle {
 
   @media (max-width: $mobile-width-only) {
@@ -140,6 +167,11 @@
     display: flex;
     gap: 33px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    width: 480px;
+  }
 }
 
 .site-list__item--active {
@@ -194,7 +226,7 @@
 
 .site-list__item a {
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;

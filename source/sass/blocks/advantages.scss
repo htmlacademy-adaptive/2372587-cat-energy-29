@@ -34,6 +34,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     gap: 80px;
   }
 }
@@ -70,7 +71,7 @@
 
 .advantages__title {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
@@ -176,7 +177,7 @@
 
 .advantages__description {
   color: #444444;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -216,7 +217,7 @@
 .advantages__catalog {
   position: relative;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
